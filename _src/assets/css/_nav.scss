@@ -49,6 +49,7 @@
       li {
         display: inline-block;
         margin-left: $spacing-800;
+        cursor: pointer;
 
         &.dropdown {
           padding-bottom: $spacing-300;

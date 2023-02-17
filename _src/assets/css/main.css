@@ -90,6 +90,7 @@ a {
 .nav-bar nav ul li {
   display: inline-block;
   margin-left: 32px;
+  cursor: pointer;
 }
 .nav-bar nav ul li.dropdown {
   padding-bottom: 12px;
