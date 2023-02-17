@@ -7,10 +7,23 @@
   overflow: hidden;
 }
 
+.nav-wrapper {
+  position: relative;
+  height: 164px;
+}
+
 .nav-bar {
   padding: 52px 0;
+  position: fixed;
+  width: 100%;
+  background: $neutral-1100;
+  transition: 300ms padding;
 
-  .nav-wrapper {
+  &.scrolled {
+    padding: $spacing-600 0;
+  }
+
+  .inner-nav-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,6 +62,7 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      line-height: initial;
 
       li {
         display: inline-block;
@@ -64,7 +78,6 @@
           position: absolute;
           background: $neutral-1100;
           border: 1px solid rgba(88, 89, 91, 0.24);
-          margin: 6px 0;
           min-width: 200px;
 
           li {
@@ -75,7 +88,7 @@
             a {
               display: block;
               margin: 0;
-              padding: $spacing-200 $spacing-400;
+              padding: $spacing-300 $spacing-400;
               font-size: $font-size-200;
               font-weight: 400;
 
@@ -116,7 +129,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 72px;
+    padding: 0 32px 0 72px;
 
     h3 {
       font-size: $font-size-400;
@@ -143,8 +156,15 @@
         margin-bottom: $spacing-400;
         padding: 0 72px;
 
-        a.active {
-          text-decoration: underline;
+        a {
+          transition: 300ms font-weight;
+          &:hover {
+            font-weight: 500;
+          }
+
+          &.active {
+            text-decoration: underline;
+          }
         }
 
         &.mobile-nav-cta {

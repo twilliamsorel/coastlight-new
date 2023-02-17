@@ -10,6 +10,11 @@
     padding: $spacing-300 $spacing-400;
     font-size: $font-size-200;
 
+    &.small {
+      padding: $spacing-200 $spacing-300;
+      font-size: $font-size-200;
+    }
+
     &:hover {
       background: $primary-200;
     }
