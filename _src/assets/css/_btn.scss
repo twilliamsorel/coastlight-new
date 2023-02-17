@@ -1,0 +1,17 @@
+.btn {
+  font-family: $font-family-header;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: 300ms background, 300ms color;
+
+  &.blue {
+    background: $primary-100;
+    color: $neutral-1100;
+    padding: $spacing-300 $spacing-400;
+    font-size: $font-size-200;
+
+    &:hover {
+      background: $primary-200;
+    }
+  }
+}

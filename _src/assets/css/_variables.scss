@@ -1,0 +1,64 @@
+// colors
+$primary-100: #257BEC;
+$primary-200: #418EF3;
+$secondary-100: #F39C2A;
+$secondary-200: #FAA12C;
+$neutral-100: #27292C;
+$neutral-200: #383C42;
+$neutral-300: #5C5F65;
+$neutral-400: #777B84;
+$neutral-500: #979BA5;
+$neutral-600: #B6B9C1;
+$neutral-700: #CDCFD6;
+$neutral-800: #E3E4EA;
+$neutral-900: #EFF0F8;
+$neutral-1000: #F8F8FD;
+$neutral-1100: #FCFCFF;
+
+$font-color: $neutral-100;
+
+// spacing
+$spacing-base: 4px;
+$spacing-200: $spacing-base * 2;
+$spacing-300: $spacing-base * 3;
+$spacing-400: $spacing-base * 4;
+$spacing-500: $spacing-base * 5;
+$spacing-600: $spacing-base * 6;
+$spacing-700: $spacing-base * 7;
+$spacing-800: $spacing-base * 8;
+$spacing-900: $spacing-base * 9;
+$spacing-1000: $spacing-base * 10;
+$spacing-1200: $spacing-base * 12;
+$spacing-1500: $spacing-base * 15;
+$spacing-2000: $spacing-base * 20;
+
+// bespoke sizes
+// $nav-height: 161px;
+
+// z-indexes
+$z-index-mobile-nav: 4;
+$z-index-nav: 3;
+$z-index-subnav: 2;
+$z-index-base: 1;
+
+// fonts
+$font-family-header: 'Raleway', sans-serif;
+$font-family-body: 'Lato', sans-serif;
+$font-size-small: 14px;
+$font-size-base: 16px;
+$font-size-100: 18px;
+$font-size-200: 20px;
+$font-size-300: 24px;
+$font-size-400: 28px;
+$font-size-400: 32px;
+$font-size-500: 36px;
+$font-size-600: 40px;
+$font-size-700: 44px;
+
+// breakpoints
+$screen-micro: 350px;
+$screen-xs: 577px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1300px;
