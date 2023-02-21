@@ -1,9 +1,7 @@
-(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-const { recurseDom } = require('./utils');
+import recurseDom from './utils.js';
 
 // MOBILE MENU TOGGLE FUNCTIONALITY
-(function () {
-  let mobileButtons = Array.from(document.querySelectorAll('[data-tag="mobile-toggle"]'));
+export function toggleMobileMenu(recurseDOM) {
   let mobileNav = document.querySelector('#mobile-nav');
 
   let toggleNav = () => {
@@ -24,10 +22,10 @@ const { recurseDom } = require('./utils');
       toggleNav();
     }
   });
-}());
+} (recurseDom);
 
 // MAIN MENU SCROLLING FUNCTIONALITY
-(function () {
+export default function mainMenuScrolling() {
   let menu = document.querySelector('#main-nav');
 
   let triggerNav = function () {
@@ -40,15 +38,4 @@ const { recurseDom } = require('./utils');
 
   window.addEventListener('scroll', triggerNav);
   window.addEventListener('load', triggerNav);
-}());
-},{"./utils":2}],2:[function(require,module,exports){
-module.exports = recurseDOM = (e, target) => {
-  if (e === target) {
-    return true;
-  } else if (e.tagName == 'BODY') {
-    return false;
-  } else {
-    return recurseDOM(e.parentElement, target);
-  }
 };
-},{}]},{},[1]);
