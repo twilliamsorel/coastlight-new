@@ -28,12 +28,15 @@ $spacing-700: $spacing-base * 7;
 $spacing-800: $spacing-base * 8;
 $spacing-900: $spacing-base * 9;
 $spacing-1000: $spacing-base * 10;
+$spacing-1100: $spacing-base * 11;
 $spacing-1200: $spacing-base * 12;
 $spacing-1500: $spacing-base * 15;
 $spacing-2000: $spacing-base * 20;
 
 // bespoke sizes
-// $nav-height: 161px;
+$block-padding: 80px;
+$block-padding-med: 120px;
+$block-padding-large: 144px;
 
 // z-indexes
 $z-index-mobile-nav: 4;
@@ -50,10 +53,10 @@ $font-size-100: 18px;
 $font-size-200: 20px;
 $font-size-300: 24px;
 $font-size-400: 28px;
-$font-size-400: 32px;
-$font-size-500: 36px;
-$font-size-600: 40px;
-$font-size-700: 44px;
+$font-size-500: 32px;
+$font-size-600: 36px;
+$font-size-700: 40px;
+$font-size-800: 44px;
 
 // breakpoints
 $screen-micro: 350px;

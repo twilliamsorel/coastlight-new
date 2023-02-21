@@ -1,0 +1,12 @@
+// BLOCK PADDING MIXIN
+@mixin block-padding {
+  padding: $block-padding 0;
+
+  @media screen and (min-width: $screen-sm) {
+    padding: $block-padding-med 0;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    padding: $block-padding-large 0;
+  }
+}

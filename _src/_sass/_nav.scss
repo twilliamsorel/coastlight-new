@@ -18,6 +18,7 @@
   width: 100%;
   background: $neutral-1100;
   transition: 300ms padding;
+  z-index: $z-index-nav;
 
   &.scrolled {
     padding: $spacing-600 0;
@@ -38,11 +39,11 @@
 
     h1 {
       margin: 0 0 0 $spacing-600;
-      font-size: $font-size-400;
+      font-size: $font-size-500;
 
       @media screen and (min-width: $screen-md) {
         margin: 0 0 0 $spacing-600;
-        font-size: $font-size-500;
+        font-size: $font-size-600;
       }
 
       @media screen and (min-width: $screen-xl) {
@@ -100,6 +101,7 @@
         }
       }
     }
+
     li:hover ul {
       display: block;
     }
@@ -119,6 +121,7 @@
   box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.16);
   transition: 400ms right;
   overflow: scroll;
+  z-index: $z-index-mobile-nav;
 
   &.hidden {
     right: -100%;
@@ -132,7 +135,7 @@
     padding: 0 32px 0 72px;
 
     h3 {
-      font-size: $font-size-400;
+      font-size: $font-size-500;
       font-weight: 600;
       margin: 0;
     }
@@ -143,7 +146,7 @@
   }
 
   nav {
-    margin-top: 40px; 
+    margin-top: 40px;
 
     ul {
       list-style: none;
@@ -158,6 +161,7 @@
 
         a {
           transition: 300ms font-weight;
+
           &:hover {
             font-weight: 500;
           }

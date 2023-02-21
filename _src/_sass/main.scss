@@ -4,6 +4,13 @@
 @import 'btn';
 @import 'nav';
 @import 'footer';
+@import 'mixins';
+
+// COMPONENTS
+@import 'components/header';
+
+// MOLECULES
+@import 'molecules/btn-container';
 
 body {
   background: $neutral-1100;

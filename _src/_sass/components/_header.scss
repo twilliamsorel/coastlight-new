@@ -1,0 +1,32 @@
+.component.header {
+  position: relative;
+
+  .content-area {
+    @include block-padding;
+
+    h2 {
+      max-width: 700px;
+      margin-bottom: $spacing-1100;
+    }
+  }
+
+  .illu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+
+    &.up-arrow {
+      justify-content: end;
+
+      .illu {
+        max-height: 340px;
+      }
+    }
+
+    .illu {
+      width: 100%;
+    }
+  }
+}

@@ -6,6 +6,7 @@ footer {
 
   img.logo {
     width: 100%;
+    max-width: 400px;
     margin-bottom: $spacing-700;
   }
 
@@ -23,35 +24,47 @@ footer {
 
   h3 {
     margin-bottom: $spacing-400;
-    font-family: $font-family-header;
   }
 
   ul {
     list-style: none;
     padding: 0;
     font-family: $font-family-body;
-    font-size: $font-size-200;
+    font-size: $font-size-100;
+
+    @media screen and (min-width: $screen-sm) {
+      font-size: $font-size-200;
+    }
 
     &.faded {
       font-weight: 300;
       text-align: right;
       display: flex;
+      width: 100%;
       flex-direction: row;
       justify-content: end;
 
-      @media screen and (min-width: $screen-md) {
+      @media screen and (min-width: 600px) {
         flex-direction: column;
         justify-content: flex-start;
       }
 
       li {
         display: inline-block;
-        margin-left: $spacing-800;
+        margin-bottom: $spacing-base;
+
+        @media screen and (min-width: $screen-md) {
+          margin-left: 0;
+        }
       }
     }
 
     li {
-      margin-bottom: $spacing-400;
+      margin-bottom: $spacing-200;
+
+      @media screen and (min-width: $screen-md) {
+        margin-bottom: $spacing-300;
+      }
     }
   }
 
@@ -68,16 +81,19 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    font-size: $font-size-200;
-    // align-items: center;
+    font-size: $font-size-100;
 
     span:first-child {
       margin-bottom: $spacing-300;
     }
 
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: $screen-xs) {
       flex-direction: row;
       justify-content: space-between;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      font-size: $font-size-200;
 
       span:first-child {
         margin-bottom: 0;
