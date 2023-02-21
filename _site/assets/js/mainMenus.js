@@ -1,8 +1,7 @@
-const { recurseDom } = require('./utils');
+import recurseDom from './utils.js';
 
 // MOBILE MENU TOGGLE FUNCTIONALITY
-(function () {
-  let mobileButtons = Array.from(document.querySelectorAll('[data-tag="mobile-toggle"]'));
+export function toggleMobileMenu(recurseDOM) {
   let mobileNav = document.querySelector('#mobile-nav');
 
   let toggleNav = () => {
@@ -23,10 +22,10 @@ const { recurseDom } = require('./utils');
       toggleNav();
     }
   });
-}());
+} (recurseDom);
 
 // MAIN MENU SCROLLING FUNCTIONALITY
-(function () {
+export default function mainMenuScrolling() {
   let menu = document.querySelector('#main-nav');
 
   let triggerNav = function () {
@@ -39,4 +38,4 @@ const { recurseDom } = require('./utils');
 
   window.addEventListener('scroll', triggerNav);
   window.addEventListener('load', triggerNav);
-}());
+};

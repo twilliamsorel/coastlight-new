@@ -1,4 +1,4 @@
-module.exports = recurseDOM = (e, target) => {
+export default function recurseDOM(e, target) {
   if (e === target) {
     return true;
   } else if (e.tagName == 'BODY') {
@@ -6,4 +6,4 @@ module.exports = recurseDOM = (e, target) => {
   } else {
     return recurseDOM(e.parentElement, target);
   }
-};
+}
