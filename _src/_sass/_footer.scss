@@ -1,0 +1,95 @@
+footer {
+  background: $neutral-200;
+  color: $neutral-1100;
+  padding: 52px 0;
+  font-family: $font-family-body;
+
+  img.logo {
+    width: 100%;
+    margin-bottom: $spacing-700;
+  }
+
+  .spacer {
+    height: $spacing-600;
+
+    @media screen and (min-width: $screen-sm) {
+      height: $spacing-600;
+    }
+
+    @media screen and (min-width: $screen-md) {
+      height: 0;
+    }
+  }
+
+  h3 {
+    margin-bottom: $spacing-400;
+    font-family: $font-family-header;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-family: $font-family-body;
+    font-size: $font-size-200;
+
+    &.faded {
+      font-weight: 300;
+      text-align: right;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+
+      @media screen and (min-width: $screen-md) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      li {
+        display: inline-block;
+        margin-left: $spacing-800;
+      }
+    }
+
+    li {
+      margin-bottom: $spacing-400;
+    }
+  }
+
+  .button {
+    text-align: center;
+
+    @media screen and (min-width: $screen-sm) {
+      text-align: right;
+    }
+  }
+
+  .copyright-wrapper {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: $font-size-200;
+    // align-items: center;
+
+    span:first-child {
+      margin-bottom: $spacing-300;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      span:first-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: $screen-md) {
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      margin-top: 80px;
+    }
+  }
+}

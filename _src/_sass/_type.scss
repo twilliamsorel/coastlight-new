@@ -1,7 +1,16 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-family-header;
   color: inherit;
   font-weight: bold;
+}
+
+h3 {
+  font-size: $font-size-300;
 }
 
 p {

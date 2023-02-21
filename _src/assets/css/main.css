@@ -1,7 +1,16 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
   color: inherit;
   font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 p {
@@ -203,6 +212,97 @@ a {
   display: inline-block;
   width: 100%;
   padding: 8px 72px;
+}
+
+footer {
+  background: #383C42;
+  color: #FCFCFF;
+  padding: 52px 0;
+  font-family: "Lato", sans-serif;
+}
+footer img.logo {
+  width: 100%;
+  margin-bottom: 28px;
+}
+footer .spacer {
+  height: 24px;
+}
+@media screen and (min-width: 768px) {
+  footer .spacer {
+    height: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .spacer {
+    height: 0;
+  }
+}
+footer h3 {
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+footer ul.faded {
+  font-weight: 300;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+@media screen and (min-width: 992px) {
+  footer ul.faded {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+footer ul.faded li {
+  display: inline-block;
+  margin-left: 32px;
+}
+footer ul li {
+  margin-bottom: 16px;
+}
+footer .button {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  footer .button {
+    text-align: right;
+  }
+}
+footer .copyright-wrapper {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 20px;
+}
+footer .copyright-wrapper span:first-child {
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  footer .copyright-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .copyright-wrapper span:first-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .copyright-wrapper {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .copyright-wrapper {
+    margin-top: 80px;
+  }
 }
 
 body {
