@@ -6,20 +6,18 @@
   "scripts": {
     "build:sass": "sass _src/_sass:_src/assets/css",
     "watch:sass": "sass --watch _src/_sass:_src/assets/css",
-    "build:eleventy": "npx @11ty/eleventy",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
-    "build": "npm run build:sass & ENVIRONMENT='production' npm run build:eleventy",
-    "dev": "npx @11ty/eleventy --serve & npm run watch:sass"
+    "build": "npm run build:sass & npx browserify _src/_scripts/main.js > _src/assets/js/bundle.js & ENVIRONMENT='production' npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve & npm run watch:sass & npx browserify _src/_scripts/main.js > _src/assets/js/bundle.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
+    "clean-css": "^5.3.2",
+    "minify": "^9.2.0",
     "sass": "^1.58.2",
-    "slugify": "^1.6.5"
-  },
-  "dependencies": {
-    "clean-css": "^5.3.2"
+    "terser": "^5.16.4"
   }
 }
