@@ -1,0 +1,26 @@
+.component.section {
+  @include block-padding;
+  position: relative;
+
+  .content-area {
+    h2 {
+      margin-bottom: $spacing-600;
+    }
+
+    .btn-container {
+      margin-top: $spacing-1100;
+    }
+  }
+
+  .illu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    align-items: center;
+
+    .illu {
+      width: 100%;
+    }
+  }
+}

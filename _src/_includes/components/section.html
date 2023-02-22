@@ -1,0 +1,33 @@
+{% if color == 'bg-metalic' %}
+{% assign secondary_button_color = 'orange-outline' %}
+{% else %}
+{% assign secondary_button_color = 'white' %}
+{% endif %}
+
+<div class="component section {{ color }}">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-1 col-10 col-lg-6 col-xl-6 {% if content_position %}order-last{% endif %}">
+        <div class="content-area">
+          <h2>Performant and secure websites that drive customer acquisition</h2>
+          <p>
+            Our development approach utilizes lightning fast techniques that reduce your site’s page load speed. That
+            means better SEO results and happier customers.
+          </p>
+          {% render molecules/btn-container.html primary_btn_copy: "Portfolio"
+          secondary_btn_copy: "Our process"
+          primary_btn_link: '/'
+          secondary_btn_link: '/'
+          primary_btn_color: 'blue'
+          secondary_btn_color: secondary_button_color %}
+
+        </div>
+      </div>
+      <div class="d-none d-lg-block col-lg-3 col-xl-3 offset-1 {% if content_position %}order-first{% endif %}">
+        <div class="illu-container up-arrow">
+          <img class="illu" src="/assets/img/illustrations/illu_handshake-circle.svg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

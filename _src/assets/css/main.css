@@ -36,7 +36,9 @@ h3 {
 }
 
 p {
-  font-family: font-family-body;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 a {
@@ -69,8 +71,8 @@ a {
   filter: drop-shadow(0px 1px 2px rgba(88, 89, 91, 0.16));
 }
 .btn.standard {
-  width: 160px;
-  font-size: 20px;
+  width: 140px;
+  font-size: 18px;
   padding: 12px 0;
 }
 @media screen and (min-width: 577px) {
@@ -100,6 +102,16 @@ a {
 .btn.white:hover {
   background: #FCFCFF;
   color: #F39C2A;
+}
+.btn.orange-outline {
+  background: transparent;
+  color: #E89B30;
+  padding: 8px 0;
+  border: 4px solid #F39C2A;
+}
+.btn.orange-outline:hover {
+  background: #F39C2A;
+  color: #FCFCFF;
 }
 
 .mobile-nav-button {
@@ -412,8 +424,41 @@ footer .copyright-wrapper span:first-child {
   width: 100%;
 }
 
-.molecule.btn-container a:first-child {
-  margin-right: 12px;
+.component.section {
+  padding: 80px 0;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .component.section {
+    padding: 120px 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .component.section {
+    padding: 144px 0;
+  }
+}
+.component.section .content-area h2 {
+  margin-bottom: 24px;
+}
+.component.section .content-area .btn-container {
+  margin-top: 44px;
+}
+.component.section .illu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  align-items: center;
+}
+.component.section .illu-container .illu {
+  width: 100%;
+}
+
+@media screen and (min-width: 577px) {
+  .molecule.btn-container a:first-child {
+    margin-right: 12px;
+  }
 }
 
 body {

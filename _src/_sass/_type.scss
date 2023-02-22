@@ -33,7 +33,9 @@ h3 {
 }
 
 p {
-  font-family: font-family-body;
+  font-family: $font-family-body;
+  font-size: $font-size-200;
+  line-height: 32px;
 }
 
 a {
