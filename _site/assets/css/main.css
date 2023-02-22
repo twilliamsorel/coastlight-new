@@ -93,15 +93,26 @@ a {
 .btn.blue:hover {
   background: #418EF3;
 }
-.btn.white {
+.btn.orange {
+  background: #F39C2A;
+  color: #FCFCFF;
+}
+.btn.orange:hover {
+  background: #FAA12C;
+}
+.btn.white-outline {
   background: transparent;
   color: #FCFCFF;
   padding: 8px 0;
   border: 4px solid #FCFCFF;
 }
-.btn.white:hover {
+.btn.white-outline.orange:hover {
   background: #FCFCFF;
   color: #F39C2A;
+}
+.btn.white-outline.blue:hover {
+  background: #FCFCFF;
+  color: #257BEC;
 }
 .btn.orange-outline {
   background: transparent;
@@ -455,6 +466,9 @@ footer .copyright-wrapper span:first-child {
   width: 100%;
 }
 
+.molecule.btn-container a:first-child {
+  margin-right: 4px;
+}
 @media screen and (min-width: 577px) {
   .molecule.btn-container a:first-child {
     margin-right: 12px;

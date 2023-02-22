@@ -1,7 +1,9 @@
 {% if color == 'bg-metalic' %}
-{% assign secondary_button_color = 'orange-outline' %}
+{% assign primary_btn_color = 'blue' %}
+{% assign secondary_btn_color = 'orange-outline' %}
 {% else %}
-{% assign secondary_button_color = 'white' %}
+{% assign primary_btn_color = 'orange' %}
+{% assign secondary_btn_color = 'white-outline blue' %}
 {% endif %}
 
 <div class="component section {{ color }}">
@@ -9,23 +11,24 @@
     <div class="row">
       <div class="offset-1 col-10 col-lg-6 col-xl-6 {% if content_position %}order-last{% endif %}">
         <div class="content-area">
-          <h2>Performant and secure websites that drive customer acquisition</h2>
-          <p>
-            Our development approach utilizes lightning fast techniques that reduce your site’s page load speed. That
-            means better SEO results and happier customers.
+          <h2 class="{% if color == 'bg-blue' %}txt-white{% endif %}">{{ header }}</h2>
+          <p class="{% if color == 'bg-blue' %}txt-white{% endif %}">
+            {{ content }}
           </p>
-          {% render molecules/btn-container.html primary_btn_copy: "Portfolio"
-          secondary_btn_copy: "Our process"
-          primary_btn_link: '/'
-          secondary_btn_link: '/'
-          primary_btn_color: 'blue'
-          secondary_btn_color: secondary_button_color %}
+          {% render molecules/btn-container.html primary_btn_copy: primary_btn_copy
+          secondary_btn_copy: secondary_btn_copy
+          primary_btn_link: primary_btn_link
+          secondary_btn_link: secondary_btn_link
+          primary_btn_color: primary_btn_color
+          secondary_btn_color: secondary_btn_color %}
 
         </div>
       </div>
       <div class="d-none d-lg-block col-lg-3 col-xl-3 offset-1 {% if content_position %}order-first{% endif %}">
         <div class="illu-container up-arrow">
-          <img class="illu" src="/assets/img/illustrations/illu_handshake-circle.svg">
+          {% if image %}
+          <img class="illu" src="{{ image }}">
+          {% endif %}
         </div>
       </div>
     </div>

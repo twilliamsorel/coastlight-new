@@ -31,15 +31,29 @@
     }
   }
 
-  &.white {
+  &.orange {
+    background: $secondary-100;
+    color: $neutral-1100;
+
+    &:hover {
+      background: $secondary-200;
+    }
+  }
+
+  &.white-outline {
     background: transparent;
     color: $neutral-1100;
     padding: $spacing-200 0;
     border: 4px solid $neutral-1100;
 
-    &:hover {
+    &.orange:hover {
       background: $neutral-1100;
       color: $secondary-100;
+    }
+
+    &.blue:hover {
+      background: $neutral-1100;
+      color: $primary-100;
     }
   }
 

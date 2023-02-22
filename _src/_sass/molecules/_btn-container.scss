@@ -1,5 +1,7 @@
 .molecule.btn-container {
   a:first-child {
+    margin-right: $spacing-base;
+
     @media screen and (min-width: $screen-xs) {
       margin-right: $spacing-300;
     }
