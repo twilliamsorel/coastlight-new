@@ -3,9 +3,9 @@
     <div class="row">
       <div class="offset-1 col-10 col-lg-7 col-xl-6">
         <div class="content-area">
-          <h2 class="txt-white">Elevate your business with beautifully designed websites and logos</h2>
-          {% render molecules/btn-container.html primary_btn_copy: "Portfolio"
-          secondary_btn_copy: "Our process"
+          <h2 class="txt-white">{{ header }}</h2>
+          {% render molecules/btn-container.html primary_btn_copy: primary_btn_copy
+          secondary_btn_copy: secondary_btn_copy
           primary_btn_link: '/'
           secondary_btn_link: '/'
           primary_btn_color: 'blue'
@@ -13,8 +13,8 @@
         </div>
       </div>
       <div class="d-none d-lg-block col-lg-3 col-xl-3 offset-1">
-        <div class="illu-container up-arrow">
-          <img class="illu" src="/assets/img/illustrations/illu_up-arrow.svg">
+        <div class="illu-container {% if title == 'Home' %}up-arrow{% endif %}">
+          <img class="illu" src="{{ image }}">
         </div>
       </div>
     </div>

@@ -70,16 +70,23 @@
         margin-left: $spacing-800;
         cursor: pointer;
 
-        &.dropdown {
-          padding-bottom: $spacing-300;
-        }
-
         ul {
           display: none;
           position: absolute;
           background: $neutral-1100;
           border: 1px solid rgba(88, 89, 91, 0.24);
           min-width: 200px;
+          z-index: $z-index-mobile-nav;
+          margin-top: $spacing-400;
+          margin-left: -$spacing-300;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: $spacing-500;
+            top: -$spacing-500;
+          }
 
           li {
             display: block;
