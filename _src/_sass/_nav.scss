@@ -41,14 +41,21 @@
       margin: 0 0 0 $spacing-600;
       font-size: $font-size-500;
 
+      @media screen and (min-width: $screen-xs) {
+        font-size: $font-size-600;
+      }
+
+      @media screen and (min-width: $screen-sm) {
+        margin: 0 0 0 $spacing-600;
+        font-size: $font-size-700;
+      }
+
       @media screen and (min-width: $screen-md) {
         margin: 0 0 0 $spacing-600;
-        font-size: $font-size-600;
       }
 
       @media screen and (min-width: $screen-xl) {
         margin: 0 0 0 $spacing-900;
-        font-size: $font-size-700;
       }
     }
   }
