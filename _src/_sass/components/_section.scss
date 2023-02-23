@@ -1,8 +1,9 @@
 .component.section {
-  @include block-padding;
   position: relative;
 
   .content-area {
+    @include block-padding;
+
     h2 {
       margin-bottom: $spacing-600;
     }
@@ -18,9 +19,16 @@
     justify-content: start;
     height: 100%;
     align-items: center;
+    @include block-padding;
+
+    @media screen and (min-width: $screen-lg) {
+      justify-content: center;
+      padding: 0;
+    }
 
     .illu {
       width: 100%;
+      max-width: 300px;
     }
   }
 }

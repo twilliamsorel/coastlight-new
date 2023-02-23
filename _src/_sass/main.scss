@@ -9,9 +9,11 @@
 // COMPONENTS
 @import 'components/header';
 @import 'components/section';
+@import 'components/slider';
 
 // MOLECULES
 @import 'molecules/btn-container';
+@import 'molecules/slider-item';
 
 body {
   background: $neutral-1100;

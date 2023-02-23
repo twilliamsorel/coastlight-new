@@ -1,0 +1,18 @@
+<section class="component slider bg-metalic">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-10 offset-1">
+        <h2 class="text-center">End to end, we handle it for you</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid scroll-container">
+    <div class="row">
+      <div class="col-10 offset-1">
+        <div class="slide-container">
+          {% for item in slides %}{% include molecules/slider-item.html data: item %}{% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

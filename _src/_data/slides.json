@@ -1,0 +1,37 @@
+[
+  {
+    "numeral": "I",
+    "header": "Branding",
+    "description": "Brand identity and logo design, including color pallets and motifs"
+  },
+  {
+    "numeral": "II",
+    "header": "Content strategy",
+    "description": "Customer persona, marketing funnel, and CTA ideation"
+  },
+  {
+    "numeral": "III",
+    "header": "Design",
+    "description": "Website design, implementing brand and content strategy"
+  },
+  {
+    "numeral": "IV",
+    "header": "Development",
+    "description": "Building out the newly designed site with best tools for use case"
+  },
+  {
+    "numeral": "V",
+    "header": "Hosting",
+    "description": "Deploying site onto a cloud-based, managed hosting platform"
+  },
+  {
+    "numeral": "VI",
+    "header": "Maintenance",
+    "description": "Ongoing updates to address security risks"
+  },
+  {
+    "numeral": "VII",
+    "header": "Ongoing support",
+    "description": "Continuing support for technical issues, changes, and updates"
+  }
+]

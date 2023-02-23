@@ -1,0 +1,31 @@
+.component.slider {
+  @include block-padding;
+
+  .scroll-container {
+    overflow: auto;
+    cursor: grab;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  h2 {
+    margin-bottom: $spacing-1100;
+  }
+
+  .slide-container {
+    width: 2436px;
+    overflow: scroll;
+    display: flex;
+    align-items: top;
+
+    @media screen and (min-width: $screen-lg) {
+      width: 2576px;
+    }
+  }
+}

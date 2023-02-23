@@ -1,6 +1,8 @@
 ---
 title: Web design overview
 layout: default
+scripts:
+- /assets/js/slider.js
 ---
 
 {% include components/header.html header: "Marketing and professional websites
@@ -10,3 +12,15 @@ secondary_btn_copy: "Portfolio"
 primary_btn_link: "/"
 secondary_btn_link: "/"
 image: "/assets/img/illustrations/illu_screens.svg" %}
+
+{% include components/slider.html %}
+
+{% include components/section.html header: "A cutting-edge toolkit that keeps your website running"
+content: "By hosting static sites in the cloud, we ensure our clients’ websites are fast, secure, and resilient. No more
+Wordpress updates or injection attacks that break your site."
+color: "bg-blue"
+primary_btn_copy: "Get a quote"
+secondary_btn_copy: "Our process"
+primary_btn_link: "/"
+secondary_btn_link: "/"
+image: "/assets/img/illustrations/illu_balloon-man.svg" %}
