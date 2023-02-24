@@ -1,0 +1,54 @@
+.molecule.sidebar {
+  position: absolute;
+  right: $spacing-1900;
+  top: calc(54px + (50% - 280px));
+
+  &.sticky {
+    position: fixed;
+    top: calc(54px + (50% - 260px));
+  }
+
+  ol {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-family: $font-family-header;
+    font-size: $font-size-200;
+    font-weight: bold;
+
+    li {
+      a {
+        width: $spacing-1100;
+        height: $spacing-1100;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: $spacing-base;
+      }
+    }
+  }
+
+  &.metallic {
+    li.active {
+      a {
+        font-size: $font-size-400;
+        background: transparent;
+        border: 1px solid $neutral-100;
+      }
+    }
+  }
+
+  &.blue {
+    li.active {
+      a {
+        font-size: $font-size-400;
+        background: $neutral-1100;
+        color: $primary-100;
+      }
+    }
+  }
+}

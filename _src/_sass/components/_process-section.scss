@@ -1,5 +1,10 @@
+.clip-box {
+  clip-path: border-box;
+}
+
 .component.process-section {
   @include block-padding;
+  position: relative;
 
   &.bg-blue {
     color: $neutral-1100;

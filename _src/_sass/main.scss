@@ -15,6 +15,7 @@
 // MOLECULES
 @import 'molecules/btn-container';
 @import 'molecules/slider-item';
+@import 'molecules/sidebar';
 
 body {
   background: $neutral-1100;
@@ -42,4 +43,10 @@ body {
     'wght' 600,
     'GRAD' 0,
     'opsz' 60
+}
+
+// ANCHOR LINK ANCHORING POINT TO ACCOUNT FOR NAV SIZE
+.link-anchor {
+  position: absolute;
+  margin-top: -$nav-height;
 }

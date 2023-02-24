@@ -1,22 +1,27 @@
-<section class="component process-section {{ bg_color }}">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-10 offset-1 col-lg-9 col-xl-7">
-        <h3 class="h2 numeral">{{ numeral }}</h3>
-        <h3 class="h2 header">{{ header }}</h3>
-        <p>
-          {{ description }}
-        </p>
+<div class="link-anchor" id="{{ header | slugify }}"></div>
+<div class="clip-box">
+  <section class="component process-section {{ bg_color }}">
+    {% include molecules/sidebar.html index: index bg_color: bg_color %}
 
-        {% if deliverables %}
-        <h4>Deliverables</h4>
-        <ul class="folders">
-          {% for item in deliverables %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-10 offset-1 col-lg-9 col-xl-7">
+          <h3 class="h2 numeral">{{ numeral }}</h3>
+          <h3 class="h2 header">{{ header }}</h3>
+          <p>
+            {{ description }}
+          </p>
+
+          {% if deliverables %}
+          <h4>Deliverables</h4>
+          <ul class="folders">
+            {% for item in deliverables %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>

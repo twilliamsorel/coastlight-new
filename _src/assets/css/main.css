@@ -555,8 +555,13 @@ footer .copyright-wrapper span:first-child {
   }
 }
 
+.clip-box {
+  clip-path: border-box;
+}
+
 .component.process-section {
   padding: 80px 0;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .component.process-section {
@@ -655,6 +660,45 @@ footer .copyright-wrapper span:first-child {
   padding: 24px;
 }
 
+.molecule.sidebar {
+  position: absolute;
+  right: 76px;
+  top: calc(54px + 50% - 280px);
+}
+.molecule.sidebar.sticky {
+  position: fixed;
+  top: calc(54px + 50% - 260px);
+}
+.molecule.sidebar ol {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.molecule.sidebar ol li a {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.molecule.sidebar ol li:not(:last-child) {
+  margin-bottom: 4px;
+}
+.molecule.sidebar.metallic li.active a {
+  font-size: 28px;
+  background: transparent;
+  border: 1px solid #27292C;
+}
+.molecule.sidebar.blue li.active a {
+  font-size: 28px;
+  background: #FCFCFF;
+  color: #257BEC;
+}
+
 body {
   background: #FCFCFF;
   height: 200vh;
@@ -673,6 +717,11 @@ body {
 
 .material-symbols-sharp {
   font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 60;
+}
+
+.link-anchor {
+  position: absolute;
+  margin-top: -108px;
 }
 
 /*# sourceMappingURL=main.css.map */

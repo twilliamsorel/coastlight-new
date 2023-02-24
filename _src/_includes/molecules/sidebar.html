@@ -1,0 +1,23 @@
+{% if bg_color == "bg-metallic" %}
+{% assign color = "metallic" %}
+{% else %}
+{% assign color = "blue" %}
+{% endif %}
+
+<div class="sidebar-wrapper">
+  <div class="molecule sidebar d-none d-lg-block {{ color }}" data-tag="sidebar">
+    <ol>
+      <li class="{% if index == 1 %}active{% endif %}"><a href="#brand-identity">I</a></li>
+      <li>&#x2022;</li>
+      <li class="{% if index == 2 %}active{% endif %}"><a href="#content-strategy">II</a></li>
+      <li>&#x2022;</li>
+      <li class="{% if index == 3 %}active{% endif %}"><a href="#web-design">III</a></li>
+      <li>&#x2022;</li>
+      <li class="{% if index == 4 %}active{% endif %}"><a href="#web-development">IV</a></li>
+      <li>&#x2022;</li>
+      <li class="{% if index == 5 %}active{% endif %}"><a href="#deployment">V</a></li>
+      <li>&#x2022;</li>
+      <li class="{% if index == 6 %}active{% endif %}"><a href="#ongoing-maintenance">VI</a></li>
+    </ol>
+  </div>
+</div>
