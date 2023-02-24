@@ -7,4 +7,13 @@ layout: default
 primary_btn_copy: "Get a quote"
 secondary_btn_copy: "Portfolio"
 primary_btn_link: linkTree.get_a_quote
-secondary_btn_link: linkTree.web_design.portfolio %}
+secondary_btn_link: linkTree.web_design.portfolio
+image: "/assets/img/illustrations/illu_continuous-circle.svg" %}
+
+{% for step in process %}
+{% include components/process-section.html bg_color: step.bg_color
+numeral: step.numeral
+header: step.header
+description: step.description
+deliverables: step.deliverables %}
+{% endfor %}
