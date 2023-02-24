@@ -4,22 +4,28 @@
       <div class="row">
         <div class="col-12">
           <div class="inner-nav-wrapper">
-            <a href="/" class="logo">
+            <a href="{{ linkTree.home }}" class="logo">
               <img src="/assets/img/logo-icon.svg" alt="Coastlight Digital icon">
               <h1>Coastlight <span class="d-none d-sm-inline-block">Digital</span></h1>
             </a>
 
             <nav class="d-none d-xl-block">
               <ul>
-                <li><a href="/">Brand and logo design</a></li>
-                <li><a href="/web-design">Web design</a></li>
-                <li class="dropdown">Company
+                <li><a href="{{ linkTree.branding }}">Brand and logo design</a></li>
+                <li><a href="{{ linkTree.web_design.overview }}">Web design</a>
                   <ul>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="{{ linkTree.web_design.overview }}">Overview</a></li>
+                    <li><a href="{{ linkTree.web_design.portfolio }}">Portfolio</a></li>
+                    <li><a href="{{ linkTree.web_design.process }}">Our process</a></li>
                   </ul>
                 </li>
-                <li><a href="/" class="btn blue small">Get a quote</a></li>
+                <li class="dropdown"><a href="{{ linkTree.company.about }}">Company</a>
+                  <ul>
+                    <li><a href="{{ linkTree.company.about }}">About</a></li>
+                    <li><a href="{{ linkTree.company.contact }}">Contact</a></li>
+                  </ul>
+                </li>
+                <li><a href="{{ linkTree.get_a_quote }}" class="btn blue small">Get a quote</a></li>
               </ul>
             </nav>
             <span data-tag="mobile-toggle"
@@ -37,14 +43,14 @@
   </header>
   <nav>
     <ul>
-      <li><a href="/" class="{% if title == 'home' %}active{% endif %}">Home</a></li>
-      <li><a href="/">Logos and branding</a></li>
-      <li><a href="/web-design">Web Design</a></li>
-      <li><a href="/">Portfolio</a></li>
-      <li><a href="/">Our process</a></li>
-      <li><a href="/">About</a></li>
-      <li><a href="/">Contact</a></li>
-      <li class="mobile-nav-cta"><a href="/">Get a quote</a></li>
+      <li><a href="{{ linkTree.home }}" class="{% if title == 'home' %}active{% endif %}">Home</a></li>
+      <li><a href="{{ linkTree.branding }}">Logos and branding</a></li>
+      <li><a href="{{ linkTree.web_design.overview }}">Web Design</a></li>
+      <li><a href="{{ linkTree.web_design.portfolio }}">Portfolio</a></li>
+      <li><a href="{{ linkTree.web_design.process }}">Our process</a></li>
+      <li><a href="{{ linkTree.company.about }}">About</a></li>
+      <li><a href="{{ linkTree.company.contact }}">Contact</a></li>
+      <li class="mobile-nav-cta"><a href="{{ linkTree.get_a_quote }}">Get a quote</a></li>
       <li><a href="https://www.linkedin.com/company/coastlight-digital/" target="_blank"><img
             src="/assets/img/ico-linkedin.svg" alt="linkedin icon"></a></li>
     </ul>

@@ -1,0 +1,19 @@
+{
+  "home": "/",
+  "web_design": {
+    "overview": "/web-design/",
+    "process": "/web-design/process",
+    "portfolio": "/web-design/porfolio"
+  },
+  "branding": "/branding",
+  "company": {
+    "about": "/company/about",
+    "contact": "/company/contact"
+  },
+  "get_a_quote": "/get-a-quote/",
+  "legal": {
+    "terms_of_use": "/legal/terms-of-use",
+    "privacy_policy": "/legal/privacy-policy"
+  },
+  "sitemap": "/sitemap"
+}
