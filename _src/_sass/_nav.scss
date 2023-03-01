@@ -74,8 +74,12 @@
 
       li {
         display: inline-block;
-        margin-left: $spacing-800;
+        margin-left: $spacing-600;
         cursor: pointer;
+
+        @media screen and (min-width: $screen-xxl) {
+          margin-left: $spacing-700;
+        }
 
         ul {
           display: none;

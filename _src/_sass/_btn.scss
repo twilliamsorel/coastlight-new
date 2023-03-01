@@ -10,7 +10,7 @@
     font-size: $font-size-100;
     padding: $spacing-300 0;
 
-    @media screen and (min-width: $screen-xs) {
+    @media screen and (min-width: $screen-sm) {
       width: 180px;
       font-size: $font-size-300;
       padding: $spacing-300 0;

@@ -2,7 +2,7 @@
   a:first-child {
     margin-right: $spacing-base;
 
-    @media screen and (min-width: $screen-xs) {
+    @media screen and (min-width: $screen-sm) {
       margin-right: $spacing-300;
     }
   }
