@@ -18,3 +18,11 @@ header: step.header
 description: step.description
 deliverables: step.deliverables %}
 {% endfor %}
+
+{% include components/cta.html header: "Ready to get started?"
+primary_btn_copy: "Get a quote"
+primary_btn_color: "blue"
+primary_btn_link: linkTree.get_a_quote
+secondary_btn_copy: "Portfolio"
+secondary_btn_color: "orange-outline"
+secondary_btn_link: linkTree.web_design.portfolio %}

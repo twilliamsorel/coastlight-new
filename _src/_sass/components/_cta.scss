@@ -1,0 +1,9 @@
+.component.cta {
+  @include block-padding;
+
+  text-align: center;
+
+  h2 {
+    margin-bottom: $spacing-1100;
+  }
+}

@@ -74,7 +74,7 @@ a {
   background: linear-gradient(91.07deg, #257BEC 7.56%, #418EF3 89.29%);
 }
 
-.bg-metalic {
+.bg-metallic {
   background: linear-gradient(98.4deg, #EFF0F8 4.76%, rgba(239, 240, 248, 0) 57.39%);
 }
 
@@ -203,7 +203,7 @@ a {
 .nav-bar nav {
   display: inline-block;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
 }
 .nav-bar nav ul {
@@ -618,6 +618,24 @@ footer .copyright-wrapper span:first-child {
   font-size: 18px;
   font-weight: 400;
   color: #777B84;
+}
+
+.component.cta {
+  padding: 80px 0;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .component.cta {
+    padding: 120px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .component.cta {
+    padding: 144px 0;
+  }
+}
+.component.cta h2 {
+  margin-bottom: 44px;
 }
 
 .molecule.btn-container a:first-child {
