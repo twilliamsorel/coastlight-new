@@ -499,6 +499,12 @@ footer .copyright-wrapper span:first-child {
   height: 100%;
   align-items: center;
   padding: 80px 0;
+  /*
+  @media screen and (min-width: $screen-xl) {
+    justify-content: center;
+    padding: 0;
+  }
+  */
 }
 @media screen and (min-width: 576px) {
   .component.section .illu-container {
@@ -508,12 +514,6 @@ footer .copyright-wrapper span:first-child {
 @media screen and (min-width: 768px) {
   .component.section .illu-container {
     padding: 144px 0;
-  }
-}
-@media screen and (min-width: 992px) {
-  .component.section .illu-container {
-    justify-content: center;
-    padding: 0;
   }
 }
 .component.section .illu-container .illu {
@@ -638,6 +638,36 @@ footer .copyright-wrapper span:first-child {
   margin-bottom: 44px;
 }
 
+.component.gallery {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .component.gallery {
+    padding: 100px 0;
+  }
+}
+.component.gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0;
+  grid-auto-rows: minmax(100px, auto);
+}
+@media screen and (min-width: 768px) {
+  .component.gallery .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .component.gallery .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .component.gallery .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .molecule.btn-container a:first-child {
   margin-right: 4px;
 }
@@ -721,6 +751,18 @@ footer .copyright-wrapper span:first-child {
   font-size: 28px;
   background: #FCFCFF;
   color: #257BEC;
+}
+
+.molecule.gallery-card {
+  width: 100%;
+  padding: 48px;
+  height: 316px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.molecule.gallery-card img {
+  width: 100%;
 }
 
 body {

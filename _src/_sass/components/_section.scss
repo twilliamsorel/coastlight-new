@@ -21,10 +21,12 @@
     align-items: center;
     @include block-padding;
 
-    @media screen and (min-width: $screen-lg) {
+    /*
+    @media screen and (min-width: $screen-xl) {
       justify-content: center;
       padding: 0;
     }
+    */
 
     .illu {
       width: 100%;
