@@ -3,25 +3,21 @@
     <div class="row">
       <div class="col-10 offset-1">
         <div class="gallery-grid">
-          {% include molecules/gallery-card.html color: "#F8FEFF"
-          title: "Boesel Built"
-          image: "/assets/img/logos/boesel-built.svg"
-          link: "/" %}
-
-          {% include molecules/gallery-card.html color: "#999999"
-          title: "Boesel Built"
-          image: "/assets/img/logos/boesel-built.svg"
-          link: "/" %}
-
-          {% include molecules/gallery-card.html color: "#F8FEFF"
-          title: "Boesel Built"
-          image: "/assets/img/logos/boesel-built.svg"
-          link: "/" %}
-
-          {% include molecules/gallery-card.html color: "#999999"
-          title: "Boesel Built"
-          image: "/assets/img/logos/boesel-built.svg"
-          link: "/" %}
+          {% if type == "logos" %}
+          {% for logo in collections.logos %}
+          {% include molecules/gallery-card.html color: logo.data.color
+          title: logo.data.title
+          logo: logo.data.logo
+          link: logo.page.url %}
+          {% endfor %}
+          {% elsif type == 'sites' %}
+          {% for site in collections.sites %}
+          {% include molecules/gallery-card.html color: site.data.color
+          title: site.data.title
+          logo: site.data.logo
+          link: site.page.url %}
+          {% endfor %}
+          {% endif %}
         </div>
       </div>
     </div>

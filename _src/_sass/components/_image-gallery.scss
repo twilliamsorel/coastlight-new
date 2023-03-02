@@ -1,0 +1,24 @@
+.component.image-gallery {
+  @include gallery-padding;
+
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: $spacing-400;
+
+    img {
+      width: 100%;
+      flex-basis: 100%;
+
+      @media screen and (min-width: $screen-md) {
+        flex-basis: 48%;
+      }
+
+      @media screen and (min-width: $screen-xl) {
+        flex-basis: 32%;
+      }
+    }
+  }
+}

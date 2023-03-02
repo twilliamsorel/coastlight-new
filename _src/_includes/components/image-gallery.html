@@ -1,0 +1,16 @@
+<section class="component image-gallery bg-metallic">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-10 offset-1">
+        <div class="gallery-container">
+          {% for image in images %}
+          <img src="{{ image }}" class="{% if forloop.index == 3 %}d-block d-md-none d-xl-block{% endif %}">
+          {% endfor %}
+        </div>
+        <a class=" btn blue-outline" data-tag="toggle-gallery">
+          See all
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

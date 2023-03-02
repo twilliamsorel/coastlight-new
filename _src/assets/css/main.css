@@ -451,7 +451,25 @@ footer .copyright-wrapper span:first-child {
 }
 .component.header .content-area h2 {
   max-width: 700px;
-  margin-bottom: 44px;
+}
+.component.header .content-area .services {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #FCFCFF;
+  margin-top: 24px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+.component.header .content-area .services .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #FCFCFF;
+  margin: 0 12px;
+}
+.component.header .content-area .btn-container {
+  margin-top: 44px;
 }
 .component.header .illu-container {
   display: flex;
@@ -519,6 +537,7 @@ footer .copyright-wrapper span:first-child {
 .component.section .illu-container .illu {
   width: 100%;
   max-width: 300px;
+  max-height: 360px;
 }
 
 .component.slider {
@@ -668,6 +687,36 @@ footer .copyright-wrapper span:first-child {
   }
 }
 
+.component.image-gallery {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .component.image-gallery {
+    padding: 100px 0;
+  }
+}
+.component.image-gallery .gallery-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.component.image-gallery .gallery-container img {
+  width: 100%;
+  flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  .component.image-gallery .gallery-container img {
+    flex-basis: 48%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .component.image-gallery .gallery-container img {
+    flex-basis: 32%;
+  }
+}
+
 .molecule.btn-container a:first-child {
   margin-right: 4px;
 }
@@ -756,7 +805,7 @@ footer .copyright-wrapper span:first-child {
 .molecule.gallery-card {
   width: 100%;
   padding: 48px;
-  height: 316px;
+  min-height: 316px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -767,7 +816,6 @@ footer .copyright-wrapper span:first-child {
 
 body {
   background: #FCFCFF;
-  height: 200vh;
 }
 
 @media screen and (min-width: 576px) {

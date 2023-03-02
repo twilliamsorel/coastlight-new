@@ -10,3 +10,11 @@
     padding: $block-padding-large 0;
   }
 }
+
+@mixin gallery-padding {
+  padding: 60px 0;
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 100px 0;
+  }
+}

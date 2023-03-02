@@ -13,6 +13,7 @@
 @import 'components/process-section';
 @import 'components/cta';
 @import 'components/gallery';
+@import 'components/image-gallery';
 
 // MOLECULES
 @import 'molecules/btn-container';
@@ -22,9 +23,6 @@
 
 body {
   background: $neutral-1100;
-
-  // TEMP, FOR TESTING
-  height: 200vh;
 }
 
 // MODIFYING FLUID CONTAINER GUTTERS AT LARGER SCREEN SIZES

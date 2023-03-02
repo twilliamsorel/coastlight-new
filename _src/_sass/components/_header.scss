@@ -6,7 +6,28 @@
 
     h2 {
       max-width: 700px;
-      margin-bottom: $spacing-1100;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $neutral-1100;
+      margin-top: $spacing-600;
+      font-size: $font-size-200;
+      font-family: $font-family-body;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background: $neutral-1100;
+        margin: 0 $spacing-300;
+      }
+    }
+
+    .btn-container {
+      margin-top: $spacing-1100;
     }
   }
 
