@@ -10,9 +10,7 @@ services:
 tags: 
   - logos
   - sites 
-logos: 
-  color: '/assets/img/logos/better-build.svg'
-  white: '/assets/img/logos/better-build-white.svg'
+logo: '/assets/img/logos/better-build.svg'
 images:
   - '/assets/img/portfolio/better-build/fs-1.jpg'
   - '/assets/img/portfolio/better-build/fs-2.jpg'
