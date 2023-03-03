@@ -1,0 +1,11 @@
+.component.text-section {
+  @include block-padding;
+
+  &.bg-blue {
+    color: $neutral-1100;
+
+    h2 {
+      margin-bottom: $spacing-600;
+    }
+  }
+}

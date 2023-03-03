@@ -2,7 +2,7 @@
   font-family: $font-family-header;
   font-weight: 600;
   border-radius: 4px;
-  transition: 300ms background, 300ms color;
+  transition: 300ms background, 300ms color, 300ms fill;
   // filter: drop-shadow(0px 1px 2px rgba(88, 89, 91, 0.16));
 
   &.standard {
@@ -57,6 +57,28 @@
     }
   }
 
+  &.blue-outline {
+    background: transparent;
+    color: $primary-100;
+    padding: $spacing-200 0;
+    border: 4px solid $primary-100;
+
+    &:hover {
+      background: $primary-100;
+      color: $neutral-1100;
+    }
+
+    &.icon {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: $spacing-200 $spacing-300;
+      border: 1px solid $primary-100;
+      font-weight: 500;
+    }
+  }
+
   &.orange-outline {
     background: transparent;
     color: $secondary-300;
@@ -66,6 +88,12 @@
     &:hover {
       background: $secondary-100;
       color: $neutral-1100;
+    }
+  }
+
+  &.icon {
+    &:hover rect {
+      fill: $neutral-1100;
     }
   }
 }

@@ -6,6 +6,12 @@
 
     h2 {
       max-width: 700px;
+      display: flex;
+
+      .external-link {
+        margin-left: $spacing-500;
+        margin-top: -$spacing-base;
+      }
     }
 
     .services {
@@ -16,6 +22,7 @@
       margin-top: $spacing-600;
       font-size: $font-size-200;
       font-family: $font-family-body;
+      flex-wrap: wrap;
 
       .dot {
         width: 8px;
@@ -28,6 +35,26 @@
 
     .btn-container {
       margin-top: $spacing-1100;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 16px;
+
+    .logo {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      padding: 0 28px;
+    }
+
+    @media screen and (min-width: $screen-xxl) {
+      padding: 0 40px;
     }
   }
 

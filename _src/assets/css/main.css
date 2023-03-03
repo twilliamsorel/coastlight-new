@@ -82,7 +82,7 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   border-radius: 4px;
-  transition: 300ms background, 300ms color;
+  transition: 300ms background, 300ms color, 300ms fill;
 }
 .btn.standard {
   width: 140px;
@@ -128,6 +128,25 @@ a {
   background: #FCFCFF;
   color: #257BEC;
 }
+.btn.blue-outline {
+  background: transparent;
+  color: #257BEC;
+  padding: 8px 0;
+  border: 4px solid #257BEC;
+}
+.btn.blue-outline:hover {
+  background: #257BEC;
+  color: #FCFCFF;
+}
+.btn.blue-outline.icon {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #257BEC;
+  font-weight: 500;
+}
 .btn.orange-outline {
   background: transparent;
   color: #E89B30;
@@ -137,6 +156,9 @@ a {
 .btn.orange-outline:hover {
   background: #F39C2A;
   color: #FCFCFF;
+}
+.btn.icon:hover rect {
+  fill: #FCFCFF;
 }
 
 .mobile-nav-button {
@@ -451,6 +473,11 @@ footer .copyright-wrapper span:first-child {
 }
 .component.header .content-area h2 {
   max-width: 700px;
+  display: flex;
+}
+.component.header .content-area h2 .external-link {
+  margin-left: 20px;
+  margin-top: -4px;
 }
 .component.header .content-area .services {
   display: flex;
@@ -460,6 +487,7 @@ footer .copyright-wrapper span:first-child {
   margin-top: 24px;
   font-size: 20px;
   font-family: "Lato", sans-serif;
+  flex-wrap: wrap;
 }
 .component.header .content-area .services .dot {
   width: 8px;
@@ -470,6 +498,26 @@ footer .copyright-wrapper span:first-child {
 }
 .component.header .content-area .btn-container {
   margin-top: 44px;
+}
+.component.header .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+}
+.component.header .logo-container .logo {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .component.header .logo-container {
+    padding: 0 28px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .component.header .logo-container {
+    padding: 0 40px;
+  }
 }
 .component.header .illu-container {
   display: flex;
@@ -696,25 +744,50 @@ footer .copyright-wrapper span:first-child {
   }
 }
 .component.image-gallery .gallery-container {
-  display: flex;
+  display: grid;
   flex-direction: row;
-  justify-content: start;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(1, 1fr);
   gap: 16px;
 }
 .component.image-gallery .gallery-container img {
   width: 100%;
+  height: auto;
   flex-basis: 100%;
 }
 @media screen and (min-width: 768px) {
-  .component.image-gallery .gallery-container img {
-    flex-basis: 48%;
+  .component.image-gallery .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1200px) {
-  .component.image-gallery .gallery-container img {
-    flex-basis: 32%;
+  .component.image-gallery .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+.component.image-gallery .button-wrapper {
+  text-align: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.component.text-section {
+  padding: 80px 0;
+}
+@media screen and (min-width: 576px) {
+  .component.text-section {
+    padding: 120px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .component.text-section {
+    padding: 144px 0;
+  }
+}
+.component.text-section.bg-blue {
+  color: #FCFCFF;
+}
+.component.text-section.bg-blue h2 {
+  margin-bottom: 24px;
 }
 
 .molecule.btn-container a:first-child {

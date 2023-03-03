@@ -2,23 +2,29 @@
   @include gallery-padding;
 
   .gallery-container {
-    display: flex;
+    display: grid;
     flex-direction: row;
-    justify-content: start;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(1, 1fr);
     gap: $spacing-400;
 
     img {
       width: 100%;
+      height: auto;
       flex-basis: 100%;
-
-      @media screen and (min-width: $screen-md) {
-        flex-basis: 48%;
-      }
-
-      @media screen and (min-width: $screen-xl) {
-        flex-basis: 32%;
-      }
     }
+
+    @media screen and (min-width: $screen-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .button-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 64px;
   }
 }
