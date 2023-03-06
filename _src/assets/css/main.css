@@ -752,7 +752,7 @@ footer .copyright-wrapper span:first-child {
   height: initial;
 }
 .component.image-gallery .gallery-mask.animate {
-  transition: height 800ms ease-in;
+  transition: height 600ms ease-in;
 }
 .component.image-gallery .gallery-container {
   display: grid;

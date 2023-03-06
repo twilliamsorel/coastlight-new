@@ -9,10 +9,10 @@ module.exports = async function () {
     await fs
       .readFile(path.resolve(__dirname, "../assets/css/main.css"))
       .then((data) => {
-        let minifiedCSS = new CleanCSS().minify(data).styles
+        let minifiedCSS = new CleanCSS().minify(data).styles;
         fs.writeFile('_src/assets/css/main.min.css', minifiedCSS, (err) => {
           console.log(err);
-        })
+        });
       });
 
     let data = await fs.readFile(path.resolve(__dirname, "../assets/js/main.js"), 'utf-8');

@@ -34,7 +34,7 @@ export default function () {
     mask.style.height = gallery.clientHeight + 'px';
     setTimeout(() => {
       mask.classList.remove('animate');
-    }, 800)
+    }, 600)
   });
 };
 
