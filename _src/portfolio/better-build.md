@@ -16,6 +16,9 @@ images:
   - '/assets/img/portfolio/better-build/fs-1.jpg'
   - '/assets/img/portfolio/better-build/fs-2.jpg'
   - '/assets/img/portfolio/better-build/fs-3.jpg'
+  - '/assets/img/portfolio/better-build/fs-4.jpg'
+  - '/assets/img/portfolio/better-build/fs-5.jpg'
+  - '/assets/img/portfolio/better-build/fs-6.jpg'
 
 ---
 

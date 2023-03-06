@@ -133,6 +133,7 @@ a {
   color: #257BEC;
   padding: 8px 0;
   border: 4px solid #257BEC;
+  width: initial;
 }
 .btn.blue-outline:hover {
   background: #257BEC;
@@ -146,6 +147,9 @@ a {
   padding: 8px 12px;
   border: 1px solid #257BEC;
   font-weight: 500;
+}
+.btn.blue-outline.icon svg {
+  margin-left: 12px;
 }
 .btn.orange-outline {
   background: transparent;
@@ -743,16 +747,31 @@ footer .copyright-wrapper span:first-child {
     padding: 100px 0;
   }
 }
+.component.image-gallery .gallery-mask {
+  overflow: hidden;
+  height: initial;
+}
+.component.image-gallery .gallery-mask.animate {
+  transition: height 800ms ease-in;
+}
 .component.image-gallery .gallery-container {
   display: grid;
   flex-direction: row;
   grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: min-content 1fr;
   gap: 16px;
+  position: relative;
 }
 .component.image-gallery .gallery-container img {
   width: 100%;
   height: auto;
   flex-basis: 100%;
+}
+.component.image-gallery .gallery-container img[data-display=none] {
+  display: none;
+}
+.component.image-gallery .gallery-container img[data-display=visible] {
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .component.image-gallery .gallery-container {

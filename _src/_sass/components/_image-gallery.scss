@@ -1,16 +1,35 @@
 .component.image-gallery {
   @include gallery-padding;
 
+  .gallery-mask {
+    overflow: hidden;
+    height: initial;
+
+    &.animate {
+      transition: height 800ms ease-in;
+    }
+  }
+
   .gallery-container {
     display: grid;
     flex-direction: row;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: min-content 1fr;
     gap: $spacing-400;
+    position: relative;
 
     img {
       width: 100%;
       height: auto;
       flex-basis: 100%;
+
+      &[data-display="none"] {
+        display: none;
+      }
+
+      &[data-display="visible"] {
+        display: block;
+      }
     }
 
     @media screen and (min-width: $screen-md) {
