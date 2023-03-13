@@ -2,7 +2,7 @@
 title: Middle ground 
 color: '#394584'
 services: 
-  - Branding
+  - Logo &amp; branding
   - Web design
 tags: 
   - logos

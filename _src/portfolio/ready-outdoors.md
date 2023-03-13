@@ -2,7 +2,7 @@
 title: Ready outdoors
 color: 'linear-gradient(180deg, #416F16 0%, #60823F 100%);'
 services: 
-  - Branding
+  - Logo &amp; branding
   - Web design
 tags: 
   - logos

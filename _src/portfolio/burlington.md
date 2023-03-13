@@ -2,7 +2,7 @@
 title: Burlington 
 color: '#373333'
 services: 
-  - Branding
+  - Logo &amp; branding
 tags: 
   - logos
 logo: '/assets/img/logos/burlington.svg'

@@ -783,6 +783,11 @@ footer .copyright-wrapper span:first-child {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.component.image-gallery .gallery-container.logo {
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 800px;
+  margin: 0 auto;
+}
 .component.image-gallery .button-wrapper {
   text-align: center;
   width: 100%;

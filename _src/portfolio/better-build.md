@@ -4,7 +4,7 @@ title: Better build
 link: https://betterbuild.fitness
 color: 'radial-gradient(50% 50% at 50% 50%, #2974CC 0%, #245EA1 100%);'
 services:
-  - Branding
+  - Logo &amp; branding
   - Content strategy
   - Web design
   - Web development

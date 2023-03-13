@@ -3,54 +3,33 @@
     <div class="row">
       <div class="col-10 offset-1">
         <div class="gallery-mask">
-          <div class="gallery-container">
+          <div class="gallery-container {% unless images %}logo{% endunless %}">
+            {% if images %}
             {% for image in images %}
-              <img
-                src="{{ image }}"
-                {% if forloop.index > 3 %}data-display="none"{% endif %}
-                class="{% if forloop.index == 
- 3 %}d-block d-md-none d-xl-block{% endif %}">
+            <img src="{{ image }}" {% if forloop.index> 3 %}data-display="none"{% endif %}
+            class="{% if forloop.index ==
+            3 %}d-block d-md-none d-xl-block{% endif %}">
             {% endfor %}
+            {% else %}
+            <img src="{{ logo }}" alt="{{ title }} logo">
+            {% endif %}
           </div>
         </div>
 
+        {% if images %}
         <div class="button-wrapper">
           <a class=" btn blue-outline standard icon" data-tag="toggle-gallery">
             See more
 
-            <svg
-              width="28"
-              height="28"
-              viewBox="0 0 28 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <rect
-                width="12.25"
-                height="12.25"
-                rx="2"
-                fill="#257BEC" />
-              <rect
-                y="15.75"
-                width="12.25"
-                height="12.25"
-                rx="2"
-                fill="#257BEC" />
-              <rect
-                x="15.7499"
-                width="12.25"
-                height="12.25"
-                rx="2"
-                fill="#257BEC" />
-              <rect
-                x="15.7499"
-                y="15.75"
-                width="12.25"
-                height="12.25"
-                rx="2"
-                fill="#257BEC" />
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="12.25" height="12.25" rx="2" fill="#257BEC" />
+              <rect y="15.75" width="12.25" height="12.25" rx="2" fill="#257BEC" />
+              <rect x="15.7499" width="12.25" height="12.25" rx="2" fill="#257BEC" />
+              <rect x="15.7499" y="15.75" width="12.25" height="12.25" rx="2" fill="#257BEC" />
             </svg>
           </a>
         </div>
+        {% endif %}
       </div>
     </div>
   </div>

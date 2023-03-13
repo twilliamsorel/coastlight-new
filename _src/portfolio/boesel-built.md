@@ -3,7 +3,7 @@ layout: portfolio
 title: Boesel built
 color: '#F8FEFF'
 services: 
-  - Branding
+  - Logo &amp; branding
 tags: 
   - logos
 logo: '/assets/img/logos/boesel-built.svg'

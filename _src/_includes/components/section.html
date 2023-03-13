@@ -15,12 +15,14 @@
           <p class="{% if color == 'bg-blue' %}txt-white{% endif %}">
             {{ content }}
           </p>
+          {% if primary_btn_copy %}
           {% render molecules/btn-container.html primary_btn_copy: primary_btn_copy
           secondary_btn_copy: secondary_btn_copy
           primary_btn_link: primary_btn_link
           secondary_btn_link: secondary_btn_link
           primary_btn_color: primary_btn_color
           secondary_btn_color: secondary_btn_color %}
+          {% endif %}
 
         </div>
       </div>

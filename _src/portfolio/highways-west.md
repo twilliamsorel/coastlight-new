@@ -2,7 +2,7 @@
 title: Highways in the west 
 color: '#F1F1F1'
 services: 
-  - Branding
+  - Logo &amp; branding
   - Web design
 tags: 
   - logos

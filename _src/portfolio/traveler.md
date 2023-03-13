@@ -2,7 +2,7 @@
 title: Traveler
 color: '#F9FCFF'
 services: 
-  - Branding
+  - Logo &amp; branding
   - Web design
 tags: 
   - logos
