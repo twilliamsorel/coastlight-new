@@ -459,18 +459,41 @@ footer .copyright-wrapper span:first-child {
   }
 }
 
+section.form {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  section.form {
+    padding: 100px 0;
+  }
+}
+section.form h3 {
+  margin-bottom: 44px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #383C42;
+  margin-bottom: 24px;
+}
+
 .component.header {
   position: relative;
 }
 .component.header .content-area {
   padding: 80px 0;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .component.header .content-area {
     padding: 120px 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .component.header .content-area {
     padding: 144px 0;
   }
@@ -546,18 +569,21 @@ footer .copyright-wrapper span:first-child {
 .component.section .content-area {
   padding: 80px 0;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .component.section .content-area {
     padding: 120px 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .component.section .content-area {
     padding: 144px 0;
   }
 }
 .component.section .content-area h2 {
   margin-bottom: 24px;
+}
+.component.section .content-area p {
+  margin-bottom: 0;
 }
 .component.section .content-area .btn-container {
   margin-top: 44px;
@@ -576,12 +602,12 @@ footer .copyright-wrapper span:first-child {
   }
   */
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .component.section .illu-container {
     padding: 120px 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .component.section .illu-container {
     padding: 144px 0;
   }
@@ -595,12 +621,12 @@ footer .copyright-wrapper span:first-child {
 .component.slider {
   padding: 80px 0;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .component.slider {
     padding: 120px 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .component.slider {
     padding: 144px 0;
   }
@@ -640,12 +666,12 @@ footer .copyright-wrapper span:first-child {
   padding: 80px 0;
   position: relative;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .component.process-section {
     padding: 120px 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .component.process-section {
     padding: 144px 0;
   }
@@ -695,12 +721,12 @@ footer .copyright-wrapper span:first-child {
   padding: 80px 0;
   text-align: center;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .component.cta {
     padding: 120px 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .component.cta {
     padding: 144px 0;
   }
@@ -797,12 +823,12 @@ footer .copyright-wrapper span:first-child {
 .component.text-section {
   padding: 80px 0;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .component.text-section {
     padding: 120px 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .component.text-section {
     padding: 144px 0;
   }

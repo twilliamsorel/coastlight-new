@@ -1,0 +1,55 @@
+---
+title: Contact
+layout: default
+---
+
+{% include components/section.html header: "Looking to connect?"
+color: "bg-blue"
+image: "/assets/img/illustrations/illu_handshake-square.svg"
+content: "Use the form below to send us a message. Alternatively, you can use one of the contact methods listed below.
+<br><br>
+<strong>Email</strong>: <a href='mailto:Trevor@coastlightdigital.com'>Trevor@coastlightdigital.com</a><br>
+<strong>Phone</strong>: <a href='tel:14152591278'>1 (415) 259-1278</a>
+<br><br>
+<a href='https://www.linkedin.com/company/coastlight-digital/' target='_blank'><img src='/assets/img/ico_linkedin.svg'
+    alt='linkedin icon'></a>
+"
+%}
+
+<section class="form bg-metallic">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+        <h3 class="h2 text-center">Contact us</h3>
+        <form>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <input type="text" placeholder="First name*" name="first_name" required>
+            </div>
+            <div class="col-12 col-md-6">
+              <input type="text" placeholder="Last name*" name="last_name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <input type="email" placeholder="Email*" name="email" required>
+            </div>
+            <div class="col-12 col-md-6">
+              <input type="tel" placeholder="Phone number" name="phone" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <textarea name="message" placeholder="Message*" required></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <input class="btn standard blue" type="submit" name="submit" value="submit">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

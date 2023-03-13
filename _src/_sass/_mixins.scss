@@ -2,11 +2,11 @@
 @mixin block-padding {
   padding: $block-padding 0;
 
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: $screen-md) {
     padding: $block-padding-med 0;
   }
 
-  @media screen and (min-width: $screen-md) {
+  @media screen and (min-width: $screen-lg) {
     padding: $block-padding-large 0;
   }
 }

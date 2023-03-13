@@ -1,0 +1,21 @@
+section.form {
+  @include gallery-padding;
+
+  h3 {
+    margin-bottom: $spacing-1100;
+  }
+}
+
+form {
+
+  input,
+  textarea {
+    width: 100%;
+    padding: $spacing-400 $spacing-600;
+    font-size: $font-size-200;
+    font-family: $font-family-body;
+    font-weight: 400;
+    color: $neutral-200;
+    margin-bottom: $spacing-600;
+  }
+}
