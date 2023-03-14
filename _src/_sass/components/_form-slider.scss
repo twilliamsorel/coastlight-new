@@ -1,0 +1,14 @@
+.component.form-slider {
+  overflow: hidden;
+
+  .form-slide-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    transition: margin 400ms;
+
+    .form-slide {
+      width: 100%;
+    }
+  }
+}

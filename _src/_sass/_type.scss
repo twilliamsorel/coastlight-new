@@ -56,6 +56,10 @@ a {
   transition: 300ms color;
 }
 
+section a {
+  text-decoration: underline;
+}
+
 // TEXT COLORS
 .txt-white {
   color: $neutral-1100;

@@ -16,12 +16,14 @@
 @import 'components/gallery';
 @import 'components/image-gallery';
 @import 'components/text-section';
+@import 'components/form-slider';
 
 // MOLECULES
 @import 'molecules/btn-container';
 @import 'molecules/slider-item';
 @import 'molecules/sidebar';
 @import 'molecules/gallery-card';
+@import 'molecules/loading-bar';
 
 body {
   background: $neutral-1100;

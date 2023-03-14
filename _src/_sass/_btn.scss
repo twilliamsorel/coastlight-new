@@ -80,6 +80,7 @@
 
       svg {
         margin-left: $spacing-300;
+        pointer-events: none;
       }
     }
   }
@@ -93,6 +94,24 @@
     &:hover {
       background: $secondary-100;
       color: $neutral-1100;
+    }
+
+    &.back {
+      padding: $spacing-300 $spacing-400;
+      box-sizing: border-box;
+      margin-right: $spacing-300;
+
+      svg {
+        width: auto;
+        max-height: 30px;
+        pointer-events: none;
+      }
+
+      &:hover {
+        svg path {
+          stroke: $neutral-1100;
+        }
+      }
     }
   }
 

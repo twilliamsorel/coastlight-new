@@ -62,6 +62,10 @@ a {
   transition: 300ms color;
 }
 
+section a {
+  text-decoration: underline;
+}
+
 .txt-white {
   color: #FCFCFF;
 }
@@ -150,6 +154,7 @@ a {
 }
 .btn.blue-outline.icon svg {
   margin-left: 12px;
+  pointer-events: none;
 }
 .btn.orange-outline {
   background: transparent;
@@ -160,6 +165,19 @@ a {
 .btn.orange-outline:hover {
   background: #F39C2A;
   color: #FCFCFF;
+}
+.btn.orange-outline.back {
+  padding: 12px 16px;
+  box-sizing: border-box;
+  margin-right: 12px;
+}
+.btn.orange-outline.back svg {
+  width: auto;
+  max-height: 30px;
+  pointer-events: none;
+}
+.btn.orange-outline.back:hover svg path {
+  stroke: #FCFCFF;
 }
 .btn.icon:hover rect {
   fill: #FCFCFF;
@@ -840,6 +858,19 @@ form textarea {
   margin-bottom: 24px;
 }
 
+.component.form-slider {
+  overflow: hidden;
+}
+.component.form-slider .form-slide-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 200%;
+  transition: margin 400ms;
+}
+.component.form-slider .form-slide-wrapper .form-slide {
+  width: 100%;
+}
+
 .molecule.btn-container a:first-child {
   margin-right: 4px;
 }
@@ -935,6 +966,27 @@ form textarea {
 }
 .molecule.gallery-card img {
   width: 100%;
+}
+
+.molecule.loading-bar {
+  background: #CDCFD6;
+  height: 12px;
+  position: relative;
+}
+.molecule.loading-bar .bar {
+  position: absolute;
+}
+.molecule.loading-bar .blue {
+  width: 15%;
+  background: #418EF3;
+  height: 100%;
+  transition: width 400ms;
+}
+.molecule.loading-bar .orange {
+  width: 15%;
+  background: #FAA12C;
+  height: 100%;
+  right: 0;
 }
 
 body {

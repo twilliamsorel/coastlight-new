@@ -1,0 +1,39 @@
+<div class="component form-slider">
+  <div class="form-slide-wrapper">
+    <div class="form-slide" data-tag="form-slide">
+      <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+        <h3 class="h2">What services are you looking for?</h3>
+        <p>
+          Please select all that apply
+        </p>
+
+        {% include molecules/form-btns.html primary_btn_copy: "Next" %}
+      </div>
+    </div>
+
+    <div class="form-slide" data-tag="form-slide">
+      <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+        <h3 class="h2">What services are left to consider?</h3>
+        <p>
+          Please select all that apply
+        </p>
+
+        {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
+      </div>
+    </div>
+
+    <div class="form-slide" data-tag="form-slide">
+      <div class="col-10 offset-1 col-lg-8 offset-lg-2">
+
+        <h3 class="h2">What services are left to consider?</h3>
+        <p>
+          Please select all that apply
+        </p>
+
+        {% include molecules/form-btns.html primary_btn_copy: "Finish" back_button: true %}
+      </div>
+    </div>
+  </div>
+</div>

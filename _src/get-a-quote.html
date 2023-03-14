@@ -1,0 +1,25 @@
+---
+title: Get a quote
+layout: default
+---
+
+{% capture content_string %}
+Answer a few questions below so we can get a better understanding of your needs. Once we’ve reviewed your
+request, we’ll get back to you with an estimate.
+<br><br>
+Looking to reach out with a specific question or request? Head over to the <a href="{{ linkTree.company.contact
+  }}">contact page</a> instead.
+{% endcapture %}
+
+{% include components/section.html header: "Get a quote for your project"
+color: "bg-blue"
+content: content_string
+image: "/assets/img/illustrations/illu_writer.svg" %}
+
+{% include molecules/loading-bar.html %}
+
+{% capture inner_content %}
+{% include components/form-slider.html %}
+{% endcapture %}
+
+{% include components/form-section.html content: inner_content %}

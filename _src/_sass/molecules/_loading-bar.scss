@@ -1,0 +1,23 @@
+.molecule.loading-bar {
+  background: $neutral-700;
+  height: $spacing-300;
+  position: relative;
+
+  .bar {
+    position: absolute;
+  }
+
+  .blue {
+    width: 15%;
+    background: $primary-200;
+    height: 100%;
+    transition: width 400ms;
+  }
+
+  .orange {
+    width: 15%;
+    background: $secondary-200;
+    height: 100%;
+    right: 0;
+  }
+}
