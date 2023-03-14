@@ -97,13 +97,13 @@
     }
 
     &.back {
-      padding: $spacing-300 $spacing-400;
+      padding: $spacing-200 $spacing-300;
       box-sizing: border-box;
       margin-right: $spacing-300;
 
       svg {
         width: auto;
-        max-height: 30px;
+        max-height: 28px;
         pointer-events: none;
       }
 
@@ -111,6 +111,15 @@
         svg path {
           stroke: $neutral-1100;
         }
+      }
+
+      @media screen and (min-width: $screen-sm) {
+        padding: $spacing-300 $spacing-400;
+
+        svg {
+          max-height: 30px;
+        }
+
       }
     }
   }
