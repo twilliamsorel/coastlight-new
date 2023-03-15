@@ -3,10 +3,12 @@ import sliderAnimator from './slider.js';
 import sidebar from './sidebar.js';
 import gallery from './gallery.js';
 import formSlider from './formSlider.js';
+import selectBoxes from './selectBoxes.js';
 
 // INITIALIZING MAIN NAVIGATION JS
 mainMenuScrolling();
 toggleMobileMenu();
+selectBoxes();
 
 if (window.location.pathname.match('/web-design/$')) {
   sliderAnimator();

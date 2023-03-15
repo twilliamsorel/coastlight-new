@@ -1,0 +1,30 @@
+.molecule.custom-input.select {
+  span {
+    font-family: $font-family-body;
+    font-size: $font-size-200;
+    display: inline-block;
+    border: 1px solid $neutral-400;
+    background: $neutral-1000;
+    padding: $spacing-300 $spacing-600;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background 400ms;
+    margin-bottom: $spacing-500;
+    margin-right: $spacing-400;
+
+    &.selected {
+      background: $secondary-100;
+      color: $neutral-1100;
+      border: 1px solid $secondary-100;
+
+      &:hover {
+        background: $secondary-100;
+        border: 1px solid $neutral-400;
+      }
+    }
+
+    &:hover {
+      background: $neutral-900;
+    }
+  }
+}

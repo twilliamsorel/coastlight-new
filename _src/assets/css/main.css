@@ -869,6 +869,17 @@ form textarea {
 .component.form-slider {
   overflow: hidden;
 }
+.component.form-slider h3.h2 {
+  margin-bottom: 24px;
+}
+.component.form-slider p {
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 48px;
+}
+.component.form-slider .custom-input {
+  margin-bottom: 80px;
+}
 .component.form-slider .form-slide-wrapper {
   display: flex;
   flex-direction: row;
@@ -995,6 +1006,32 @@ form textarea {
   background: #FAA12C;
   height: 100%;
   right: 0;
+}
+
+.molecule.custom-input.select span {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #777B84;
+  background: #F8F8FD;
+  padding: 12px 24px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 400ms;
+  margin-bottom: 20px;
+  margin-right: 16px;
+}
+.molecule.custom-input.select span.selected {
+  background: #F39C2A;
+  color: #FCFCFF;
+  border: 1px solid #F39C2A;
+}
+.molecule.custom-input.select span.selected:hover {
+  background: #F39C2A;
+  border: 1px solid #777B84;
+}
+.molecule.custom-input.select span:hover {
+  background: #EFF0F8;
 }
 
 body {

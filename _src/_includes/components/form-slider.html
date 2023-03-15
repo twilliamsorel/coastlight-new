@@ -8,6 +8,8 @@
           Please select all that apply
         </p>
 
+        {% include molecules/input-select.html options: "Brand identity, Content strategy, Web design, Web development,
+        Hosting and maintenance, All of the above, Other" %}
         {% include molecules/form-btns.html primary_btn_copy: "Next" %}
       </div>
     </div>
@@ -15,10 +17,12 @@
     <div class="form-slide" data-tag="form-slide">
       <div class="col-10 offset-1 col-lg-8 offset-lg-2">
 
-        <h3 class="h2">What services are left to consider?</h3>
+        <h3 class="h2">Does your site contain content that you want to edit on a regular basis?</h3>
         <p>
-          Please select all that apply
+          This could be a blog, a news section, landing pages, or anything else
         </p>
+
+        {% include molecules/input-select.html options: "Yes, No" switch: true %}
 
         {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
       </div>
