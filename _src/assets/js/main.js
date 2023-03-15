@@ -1,8 +1,8 @@
-import mainMenuScrolling, { toggleMobileMenu } from './mainMenus.js';
+import { mainMenuScrolling, toggleMobileMenu } from './mainMenus.js';
 import sliderAnimator from './slider.js';
 import sidebar from './sidebar.js';
 import gallery from './gallery.js';
-import formSlider from './formSlider.js';
+import { formSlider, submitSliderForm } from './formSlider.js';
 import selectBoxes from './selectBoxes.js';
 
 // INITIALIZING MAIN NAVIGATION JS
@@ -24,4 +24,5 @@ if (window.location.pathname.match('/portfolio/[0-9a-z-]+/$')) {
 
 if (window.location.pathname.match('/get-a-quote/$')) {
   formSlider();
+  submitSliderForm();
 }

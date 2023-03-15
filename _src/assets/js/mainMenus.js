@@ -1,4 +1,4 @@
-import recurseDom from './utils.js';
+import { recurseDOM } from './utils.js';
 
 // MOBILE MENU TOGGLE FUNCTIONALITY
 export function toggleMobileMenu(recurseDOM) {
@@ -22,10 +22,10 @@ export function toggleMobileMenu(recurseDOM) {
       toggleNav();
     }
   });
-} (recurseDom);
+} (recurseDOM);
 
 // MAIN MENU SCROLLING FUNCTIONALITY
-export default function mainMenuScrolling() {
+export function mainMenuScrolling() {
   let menu = document.querySelector('#main-nav');
 
   let triggerNav = function () {

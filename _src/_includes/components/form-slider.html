@@ -1,6 +1,6 @@
 <div class="link-anchor deep" id="form-slider"></div>
 <div class="component form-slider">
-  <form id="slider">
+  <form id="slider" action="http://localhost:3000/api" method="post">
     <div class="form-slide-wrapper">
       <div class="form-slide" data-tag="form-slide">
         <div class="col-10 offset-1 col-lg-8 offset-lg-2">
@@ -11,8 +11,8 @@
           </p>
 
           {% include molecules/input-select.html options: "Brand identity, Content strategy, Web design, Web
-          development,
-          Hosting and maintenance, All of the above, Other" name: "desired-services" %}
+          development, Hosting and maintenance, All of the above, Other"
+          name: "desired_services" %}
           {% include molecules/form-btns.html primary_btn_copy: "Next" %}
         </div>
       </div>
@@ -25,11 +25,11 @@
             This could be a blog, a news section, landing pages, or anything else
           </p>
 
-          {% include molecules/input-select.html options: "Yes, No" switch: true name: "frequent-updates" %}
+          {% include molecules/input-select.html options: "Yes, No" switch: true name: "frequent_updates" %}
 
           <h3 class="h2">What kind of content do you want to be able to edit?</h3>
 
-          <textarea name="editable-content"></textarea>
+          <textarea name="editable_content"></textarea>
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
         </div>
@@ -51,7 +51,7 @@
             This includes services like Segment, Optimizely, or other SDKs
           </p>
 
-          {% include molecules/input-select.html options: "Yes, No" switch: true name: "advanced-tracking" %}
+          {% include molecules/input-select.html options: "Yes, No" switch: true name: "advanced_tracking" %}
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
         </div>
@@ -65,7 +65,7 @@
             Try to give an estimate; this can change later
           </p>
 
-          <input type="number" placeholder="1" name="number-pages">
+          <input type="number" placeholder="1" name="number_pages">
 
           <h3 class="h2">Are you looking for any special features?</h3>
 
@@ -73,7 +73,7 @@
             If nothing comes to mind, feel free to leave this section blank
           </p>
 
-          <textarea name="special-features"></textarea>
+          <textarea name="special_features"></textarea>
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
         </div>
@@ -84,7 +84,7 @@
 
           <h3 class="h2">Do you have an existing website?</h3>
 
-          {% include molecules/input-select.html options: "Yes, No" switch: true name: "existing-site" %}
+          {% include molecules/input-select.html options: "Yes, No" switch: true name: "existing_site" %}
 
           <h3 class="h2">Are you open to sharing your site?</h3>
 
@@ -93,7 +93,7 @@
             section blank
           </p>
 
-          <input type="text" name="existing-site-address">
+          <input type="text" name="existing_site_address">
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
         </div>
@@ -104,28 +104,28 @@
           <h3 class="h2 text-center">Your contact information</h3>
           <div class="row">
             <div class="col-12 col-md-6">
-              <input type="text" placeholder="First name*" name="first_name" required>
+              <input type="text" placeholder="First name*" name="first_name">
             </div>
             <div class="col-12 col-md-6">
-              <input type="text" placeholder="Last name*" name="last_name" required>
+              <input type="text" placeholder="Last name*" name="last_name">
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-6">
-              <input type="email" placeholder="Email*" name="email" required>
+              <input type="email" placeholder="Email*" name="email">
             </div>
             <div class="col-12 col-md-6">
-              <input type="tel" placeholder="Phone number" name="phone" required>
+              <input type="tel" placeholder="Phone number" name="phone">
             </div>
           </div>
           <div class="row">
             <div class="col-12">
-              <textarea name="message" placeholder="Message*" required></textarea>
+              <textarea name="message" placeholder="Message*"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="col-12 text-center">
-              {% include molecules/form-btns.html primary_btn_copy: "Submit" back_button: true %}
+              {% include molecules/form-btns.html primary_btn_copy: "Submit" back_button: true form_submit: true %}
             </div>
           </div>
         </div>

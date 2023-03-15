@@ -1,7 +1,7 @@
 {% assign options_arr = options | strip | split: ',' %}
 
 <div class="molecule custom-input select" data-value="" data-input="custom-select" {% if switch %}data-switch="true" {%
-  endif %} data-name="{{ name }}">
+  endif %} name="{{ name }}">
   {% for option in options_arr %}
   <span data-select="{{ option | slugify }}">{{ option }}</span>
   {% endfor %}

@@ -1,4 +1,18 @@
-export default function formSlider() {
+import { postRequest } from "./utils.js";
+
+function getAllData() {
+  const form = document.querySelector('form#slider');
+  const inputs = Array.from(form.querySelectorAll('[name]'));
+
+  const data = inputs.reduce((acc, input, i) => {
+    if (i != 0) acc += '&';
+    return acc += `${input.getAttribute('name')}=${input.value ? input.value : input.getAttribute('data-value')}`;
+  }, '');
+
+  return data;
+};
+
+export function formSlider() {
   const container = document.querySelector('.form-slide-wrapper');
   const slides = Array.from(document.querySelectorAll('[data-tag="form-slide"]'));
   const progressBar = document.querySelector('.blue.bar');
@@ -28,4 +42,22 @@ export default function formSlider() {
       progressBar.style.width = ((100 / ((slides.length) + 1)) * (currentPosition + 1)) + '%';
     }
   }, false);
+}
+
+// GET DATA + SUBMIT FORM
+export function submitSliderForm() {
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const data = getAllData();
+
+    console.log(data);
+
+    postRequest(e.target.action, data, (res) => {
+      console.log(res);
+    });
+
+  });
 }

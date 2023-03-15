@@ -8,7 +8,7 @@ section.form {
 
 form {
 
-  input,
+  input:not([type="submit"]),
   textarea {
     width: 100%;
     padding: $spacing-400 $spacing-600;
