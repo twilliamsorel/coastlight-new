@@ -869,16 +869,60 @@ form textarea {
 .component.form-slider {
   overflow: hidden;
 }
-.component.form-slider h3.h2 {
+.component.form-slider h3 {
   margin-bottom: 24px;
 }
 .component.form-slider p {
   font-weight: 300;
   font-size: 24px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
-.component.form-slider .custom-input {
-  margin-bottom: 80px;
+@media screen and (min-width: 992px) {
+  .component.form-slider p {
+    margin-bottom: 48px;
+  }
+}
+.component.form-slider .custom-input,
+.component.form-slider textarea,
+.component.form-slider input {
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 992px) {
+  .component.form-slider .custom-input,
+  .component.form-slider textarea,
+  .component.form-slider input {
+    margin-bottom: 80px;
+  }
+}
+.component.form-slider textarea,
+.component.form-slider input,
+.component.form-slider .custom-input span {
+  background: #FCFCFF;
+  border: 1px solid #777B84;
+  font-family: "Lato", sans-serif;
+}
+.component.form-slider input,
+.component.form-slider textarea {
+  width: 100%;
+  max-width: 660px;
+  padding: 12px 16px;
+  font-size: 20px;
+}
+.component.form-slider textarea {
+  min-height: 180px;
+}
+.component.form-slider input[type=number] {
+  max-width: 88px;
+  font-size: 20px;
+  padding: 12px 8px 12px 16px;
+}
+.component.form-slider .final input,
+.component.form-slider .final textarea {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+.component.form-slider .final textarea {
+  margin-bottom: 44px;
 }
 .component.form-slider .form-slide-wrapper {
   display: flex;
@@ -990,7 +1034,8 @@ form textarea {
 .molecule.loading-bar {
   background: #CDCFD6;
   height: 12px;
-  position: relative;
+  position: sticky;
+  top: 108px;
 }
 .molecule.loading-bar .bar {
   position: absolute;
@@ -1009,11 +1054,13 @@ form textarea {
 }
 
 .molecule.custom-input.select span {
+  min-width: 80px;
+  text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   display: inline-block;
   border: 1px solid #777B84;
-  background: #F8F8FD;
+  background: #FCFCFF;
   padding: 12px 24px;
   font-weight: 400;
   cursor: pointer;
@@ -1056,6 +1103,9 @@ body {
 .link-anchor {
   position: absolute;
   margin-top: -108px;
+}
+.link-anchor.deep {
+  margin-top: -200px;
 }
 
 /*# sourceMappingURL=main.css.map */

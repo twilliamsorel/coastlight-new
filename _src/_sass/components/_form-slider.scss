@@ -1,18 +1,68 @@
 .component.form-slider {
   overflow: hidden;
 
-  h3.h2 {
+  h3 {
     margin-bottom: $spacing-600;
   }
 
   p {
     font-weight: 300;
     font-size: $font-size-300;
-    margin-bottom: $spacing-1200;
+    margin-bottom: $spacing-800;
+
+    @media screen and (min-width: $screen-lg) {
+      margin-bottom: $spacing-1200;
+    }
   }
 
-  .custom-input {
-    margin-bottom: calc(80px);
+  .custom-input,
+  textarea,
+  input {
+    margin-bottom: $spacing-1100;
+
+    @media screen and (min-width: $screen-lg) {
+      margin-bottom: 80px;
+    }
+  }
+
+  textarea,
+  input,
+  .custom-input span {
+    background: $neutral-1100;
+    border: 1px solid $neutral-400;
+    font-family: $font-family-body;
+
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    max-width: 660px;
+    padding: $spacing-300 $spacing-400;
+    font-size: $font-size-200;
+  }
+
+  textarea {
+    min-height: 180px;
+  }
+
+  input[type="number"] {
+    max-width: 88px;
+    font-size: $font-size-200;
+    padding: $spacing-300 $spacing-200 $spacing-300 $spacing-400;
+  }
+
+  .final {
+
+    input,
+    textarea {
+      margin-bottom: $spacing-500;
+      max-width: 100%;
+    }
+
+    textarea {
+      margin-bottom: $spacing-1100;
+    }
   }
 
   .form-slide-wrapper {

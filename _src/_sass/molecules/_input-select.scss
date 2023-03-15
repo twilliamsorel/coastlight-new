@@ -1,10 +1,12 @@
 .molecule.custom-input.select {
   span {
+    min-width: 80px;
+    text-align: center;
     font-family: $font-family-body;
     font-size: $font-size-200;
     display: inline-block;
     border: 1px solid $neutral-400;
-    background: $neutral-1000;
+    background: $neutral-1100;
     padding: $spacing-300 $spacing-600;
     font-weight: 400;
     cursor: pointer;

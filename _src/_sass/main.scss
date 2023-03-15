@@ -55,4 +55,8 @@ body {
 .link-anchor {
   position: absolute;
   margin-top: -$nav-height;
+
+  &.deep {
+    margin-top: -200px;
+  }
 }

@@ -1,7 +1,8 @@
 .molecule.loading-bar {
   background: $neutral-700;
   height: $spacing-300;
-  position: relative;
+  position: sticky;
+  top: $nav-height;
 
   .bar {
     position: absolute;
