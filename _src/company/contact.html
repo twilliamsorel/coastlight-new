@@ -19,7 +19,7 @@ content: "Use the form below to send us a message. Alternatively, you can use on
 {% capture inner_content %}
 <div class="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
   <h3 class="h2 text-center">Contact us</h3>
-  <form>
+  <form method="POST" action="https://server.coastlightdigital.com/api/sendmail">
     <div class="row">
       <div class="col-12 col-md-6">
         <input type="text" placeholder="First name*" name="first_name" required>

@@ -4,6 +4,7 @@ import sidebar from './sidebar.js';
 import gallery from './gallery.js';
 import { formSlider, submitSliderForm } from './formSlider.js';
 import selectBoxes from './selectBoxes.js';
+import { sendForm } from './utils.js';
 
 // INITIALIZING MAIN NAVIGATION JS
 mainMenuScrolling();
@@ -25,4 +26,8 @@ if (window.location.pathname.match('/portfolio/[0-9a-z-]+/$')) {
 if (window.location.pathname.match('/get-a-quote/$')) {
   formSlider();
   submitSliderForm();
+}
+
+if (window.location.pathname.match('/company/contact/$')) {
+  sendForm();
 }
