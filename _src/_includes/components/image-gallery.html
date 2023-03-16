@@ -1,4 +1,5 @@
-<section class="component image-gallery bg-metallic">
+<section class="component image-gallery {% if images %}bg-metallic{% endif %}" {% unless images
+  %}style="background-color: {{ color }}" {% endunless %}>
   <div class="container-fluid">
     <div class="row">
       <div class="col-10 offset-1">
@@ -6,9 +7,8 @@
           <div class="gallery-container {% unless images %}logo{% endunless %}">
             {% if images %}
             {% for image in images %}
-            <img src="{{ image }}" {% if forloop.index> 3 %}data-display="none"{% endif %}
-            class="{% if forloop.index ==
-            3 %}d-block d-md-none d-xl-block{% endif %}">
+            <a href="{{ image }}" target="_blank"><img src="{{ image }}" {% if forloop.index> 3 %}data-display="none"{%
+              endif %}></a>
             {% endfor %}
             {% else %}
             <img src="{{ logo }}" alt="{{ title }} logo">
@@ -16,7 +16,7 @@
           </div>
         </div>
 
-        {% if images %}
+        {% if images.size > 3 %}
         <div class="button-wrapper">
           <a class=" btn blue-outline standard icon" data-tag="toggle-gallery">
             See more

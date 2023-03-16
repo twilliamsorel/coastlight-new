@@ -1,7 +1,10 @@
 export default function () {
+  let isMobile = document.querySelector('.image-gallery-mobile');
   let galleryButton = document.querySelector('[data-tag="toggle-gallery"]');
   let hiddenGalleryItems = document.querySelectorAll('[data-display="none"]');
   let position = 0;
+
+  const rowSize = isMobile ? 5 : 3;
 
   // EXPANSION ANIMATION
   const gallery = document.querySelector('.gallery-container');
@@ -19,7 +22,7 @@ export default function () {
   galleryButton.addEventListener('click', function () {
     mask.classList.add('animate');
 
-    for (let i = position; i < (position + 3); ++i) {
+    for (let i = position; i < (position + rowSize); ++i) {
       if (hiddenGalleryItems[i]) {
         hiddenGalleryItems[i].setAttribute('data-display', 'visible');
       }
