@@ -4,7 +4,7 @@ const CleanCSS = require("clean-css");
 const terser = require("terser");
 
 module.exports = async function () {
-  // MINIFYING CSS AND JS FILES
+  // MINIFYING CSS AND JS
   if (process.env.ENVIRONMENT === 'production') {
     await fs
       .readFile(path.resolve(__dirname, "../assets/css/main.css"))
