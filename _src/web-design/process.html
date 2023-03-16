@@ -5,11 +5,12 @@ layout: default
 
 {% include components/header.html header: "An end-to-end process for a complete product, or pick and choose"
 primary_btn_copy: "Get a quote"
-secondary_btn_copy: "Portfolio"
+secondary_btn_copy: "Learn more"
 primary_btn_link: linkTree.get_a_quote
-secondary_btn_link: linkTree.web_design.portfolio
+secondary_btn_link: '#process'
 image: "/assets/img/illustrations/illu_continuous-circle.svg" %}
 
+<div class="link-anchor" id="process"></div>
 {% for step in process %}
 {% include components/process-section.html index: forloop.index
 bg_color: step.bg_color

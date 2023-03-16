@@ -1004,6 +1004,7 @@ form textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .molecule.sidebar ol li:not(:last-child) {
   margin-bottom: 4px;
