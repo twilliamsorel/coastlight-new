@@ -1,6 +1,36 @@
 .component.form-slider {
   overflow: hidden;
 
+  #tooltip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $neutral-1100;
+    padding: $spacing-400 $spacing-600;
+    max-width: 240px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    font-size: $font-size-200;
+    font-family: $font-family-body;
+    font-weight: 300;
+    border: 1px solid red;
+
+    &::before {
+      content: "";
+      width: 0;
+      height: 0;
+      left: -14px;
+      position: absolute;
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-right: 14px solid red;
+    }
+  }
+
+  .error-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
   h3 {
     margin-bottom: $spacing-600;
   }

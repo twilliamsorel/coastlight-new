@@ -29,4 +29,8 @@
       background: $neutral-900;
     }
   }
+
+  &.flag {
+    border: 2px solid red;
+  }
 }

@@ -12,6 +12,22 @@ function getAllData() {
   return data;
 };
 
+function validateSlide(slides, currentPosition) {
+  const validators = Array.from(slides[currentPosition].querySelectorAll('[data-required="true"]'));
+
+  const isValidated = validators.reduce((acc, validator) => {
+    let value;
+    if (validator.getAttribute('type') === 'email') {
+      value = /[@][a-zA-Z0-9]/.test(validator.value) ? true : false;
+    } else {
+      value = validator.value ? validator.value : validator.getAttribute('data-value');
+    }
+    return acc += value ? 1 : 0;
+  }, 0);
+
+  return isValidated === validators.length;
+};
+
 export function formSlider() {
   const container = document.querySelector('.form-slide-wrapper');
   const slides = Array.from(document.querySelectorAll('[data-tag="form-slide"]'));
@@ -26,6 +42,24 @@ export function formSlider() {
 
   window.addEventListener('click', function (e) {
     if (e.target.getAttribute('data-tag') === 'form-next') {
+      const validated = validateSlide(slides, currentPosition);
+      if (!validated) {
+        const requiredElements = Array.from(slides[currentPosition].querySelectorAll('[data-required="true"]'));
+        const unfulfilled = requiredElements.filter((e) => !e.getAttribute('data-value'));
+
+        const tooltip = `
+          <div id="tooltip">Please fill out this field before continuing</div>
+        `;
+
+        unfulfilled[0].parentElement.insertAdjacentHTML('beforeend', tooltip);
+
+        setTimeout(() => {
+          document.querySelector('#tooltip').remove();
+        }, 3000);
+
+        return;
+      }
+
       currentPosition++;
     }
 
@@ -62,7 +96,6 @@ export function submitSliderForm() {
           <a href="/" class="btn orange-outline standard">Back home</a>
         `;
       }
-      console.log(res);
     });
   });
 }

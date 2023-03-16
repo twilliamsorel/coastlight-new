@@ -3,6 +3,7 @@
   height: $spacing-300;
   position: sticky;
   top: $nav-height;
+  z-index: $z-index-nav;
 
   .bar {
     position: absolute;

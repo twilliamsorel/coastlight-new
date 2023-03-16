@@ -10,9 +10,12 @@
             Please select all that apply
           </p>
 
-          {% include molecules/input-select.html options: "Brand identity, Content strategy, Web design, Web
-          development, Hosting and maintenance, All of the above, Other"
-          name: "desired_services" %}
+          <div class="error-wrapper">
+            {% include molecules/input-select.html required: true
+            options: "Brand identity, Content strategy, Web design, Web
+            development, Hosting and maintenance, All of the above, Other"
+            name: "desired_services" %}
+          </div>
           {% include molecules/form-btns.html primary_btn_copy: "Next" %}
         </div>
       </div>
@@ -22,13 +25,15 @@
 
           <h3 class="h2">Does your site contain content that you want to edit on a regular basis?</h3>
           <p>
-            This could be a blog, a news section, landing pages, or anything else
+            This could be a blog, a news section, landing pages, products, or anything else
           </p>
-
-          {% include molecules/input-select.html options: "Yes, No" switch: true name: "frequent_updates" %}
+          <div class="error-wrapper">
+            {% include molecules/input-select.html required: true options: "Yes, No" switch: true name:
+            "frequent_updates"
+            %}
+          </div>
 
           <h3 class="h2">What kind of content do you want to be able to edit?</h3>
-
           <textarea name="editable_content"></textarea>
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
@@ -42,16 +47,21 @@
           <p>
             This means translated site content based on the user’s location
           </p>
-
-          {% include molecules/input-select.html options: "Yes, No" switch: true name: "localization" %}
+          <div class="error-wrapper">
+            {% include molecules/input-select.html required: true options: "Yes, No" switch: true name: "localization"
+            %}
+          </div>
 
           <h3 class="h2">Does your site require advanced analytics tracking or SDK integration?</h3>
-
           <p>
             This includes services like Segment, Optimizely, or other SDKs
           </p>
-
-          {% include molecules/input-select.html options: "Yes, No" switch: true name: "advanced_tracking" %}
+          <div class="error-wrapper">
+            {% include molecules/input-select.html required: true
+            options: "Yes, No"
+            switch: true
+            name: "advanced_tracking" %}
+          </div>
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
         </div>
@@ -64,15 +74,14 @@
           <p>
             Try to give an estimate; this can change later
           </p>
-
-          <input type="number" placeholder="1" name="number_pages">
+          <div class="error-wrapper">
+            <input type="number" name="number_pages" data-required="true">
+          </div>
 
           <h3 class="h2">Are you looking for any special features?</h3>
-
           <p>
             If nothing comes to mind, feel free to leave this section blank
           </p>
-
           <textarea name="special_features"></textarea>
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
@@ -84,15 +93,18 @@
 
           <h3 class="h2">Do you have an existing website?</h3>
 
-          {% include molecules/input-select.html options: "Yes, No" switch: true name: "existing_site" %}
+          <div class="error-wrapper">
+            {% include molecules/input-select.html required: true
+            options: "Yes, No"
+            switch: true
+            name: "existing_site" %}
+          </div>
 
           <h3 class="h2">Are you open to sharing your site?</h3>
-
           <p>
             It would be great to see what we’re working with, but if you can’t share right now, feel free to leave this
             section blank
           </p>
-
           <input type="text" name="existing_site_address">
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
@@ -104,15 +116,15 @@
           <h3 class="h2 text-center">Your contact information</h3>
           <div class="row">
             <div class="col-12 col-md-6">
-              <input type="text" placeholder="First name*" name="first_name">
+              <input type="text" placeholder="First name*" name="first_name" required data-required="true">
             </div>
             <div class="col-12 col-md-6">
-              <input type="text" placeholder="Last name*" name="last_name">
+              <input type="text" placeholder="Last name*" name="last_name" required data-required="true">
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-6">
-              <input type="email" placeholder="Email*" name="email">
+              <input type="email" placeholder="Email*" name="email" required data-required="true">
             </div>
             <div class="col-12 col-md-6">
               <input type="tel" placeholder="Phone number" name="phone">
@@ -120,7 +132,7 @@
           </div>
           <div class="row">
             <div class="col-12">
-              <textarea name="message" placeholder="Message*"></textarea>
+              <textarea name="message" placeholder="Message"></textarea>
             </div>
           </div>
           <div class="row">
