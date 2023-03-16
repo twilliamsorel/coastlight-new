@@ -23,6 +23,15 @@
       <div class="form-slide" data-tag="form-slide">
         <div class="col-10 offset-1 col-lg-8 offset-lg-2">
 
+          <h3 class="h2">Is this an eCommerce site?</h3>
+          <div class="error-wrapper">
+            {% include molecules/input-select.html required: true
+            options: "Yes, No"
+            switch: true
+            name: "ecommerce"
+            %}
+          </div>
+
           <h3 class="h2">Does your site contain content that you want to edit on a regular basis?</h3>
           <p>
             This could be a blog, a news section, landing pages, products, or anything else
