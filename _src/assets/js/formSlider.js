@@ -1,16 +1,4 @@
-import { postRequest } from "./utils.js";
-
-function getAllData() {
-  const form = document.querySelector('form#slider');
-  const inputs = Array.from(form.querySelectorAll('[name]'));
-
-  const data = inputs.reduce((acc, input, i) => {
-    if (i != 0) acc += '&';
-    return acc += `${input.getAttribute('name')}=${input.value ? input.value : input.getAttribute('data-value')}`;
-  }, '');
-
-  return data;
-};
+import { postRequest, getFormData } from "./utils.js";
 
 function validateSlide(slides, currentPosition) {
   const validators = Array.from(slides[currentPosition].querySelectorAll('[data-required="true"]'));
@@ -28,11 +16,27 @@ function validateSlide(slides, currentPosition) {
   return isValidated === validators.length;
 };
 
+function manageGates() {
+  const gateKeepers = Array.from(document.querySelectorAll('[data-gateway]'));
+
+  gateKeepers.forEach((gateway) => {
+    gateway.addEventListener('click', () => {
+      if (gateway.getAttribute('data-value').indexOf('yes') > -1) {
+        document.querySelector(`[data-gate-id=${gateway.getAttribute('data-gateway')}]`).classList.add('revealed');
+      } else {
+        document.querySelector(`[data-gate-id=${gateway.getAttribute('data-gateway')}]`).classList.remove('revealed');
+      }
+    });
+  });
+};
+
 export function formSlider() {
   const container = document.querySelector('.form-slide-wrapper');
   const slides = Array.from(document.querySelectorAll('[data-tag="form-slide"]'));
   const progressBar = document.querySelector('.blue.bar');
   const finishBar = document.querySelector('.orange.bar');
+
+  manageGates();
 
   let currentPosition = 0;
 
@@ -86,13 +90,19 @@ export function submitSliderForm() {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const data = getAllData();
+    const data = getFormData();
 
     postRequest(e.target.action, data, (res) => {
       if (res) {
         responseElement.innerHTML = `
           <h3 class="h2">Your request has been sent!</h3>  
           <p>We'll get back to you as soon as possible with your quote</p>
+          <a href="/" class="btn orange-outline standard">Back home</a>
+        `;
+      } else {
+        responseElement.innerHTML = `
+          <h3 class="h2">Uho! Something went wrong</h3>  
+          <p>Your request could not be sent at this time. Please try again later.</p>
           <a href="/" class="btn orange-outline standard">Back home</a>
         `;
       }

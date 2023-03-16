@@ -1,7 +1,8 @@
 {% assign options_arr = options | strip | split: ',' %}
 
 <div {% if required %}data-required="true" {% endif %} class="molecule custom-input select" data-value=""
-  data-input="custom-select" {% if switch %}data-switch="true" {% endif %} name="{{ name }}">
+  data-input="custom-select" {% if switch %}data-switch="true" {% endif %} name="{{ name }}" {% if gateway
+  %}data-gateway="{{ gateway }}" {% endif %}>
   {% for option in options_arr %}
   <span data-select="{{ option | slugify }}">{{ option }}</span>
   {% endfor %}

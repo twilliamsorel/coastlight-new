@@ -28,13 +28,18 @@
             This could be a blog, a news section, landing pages, products, or anything else
           </p>
           <div class="error-wrapper">
-            {% include molecules/input-select.html required: true options: "Yes, No" switch: true name:
-            "frequent_updates"
+            {% include molecules/input-select.html required: true
+            options: "Yes, No"
+            switch: true
+            name: "frequent_updates"
+            gateway: "editable_content"
             %}
           </div>
 
-          <h3 class="h2">What kind of content do you want to be able to edit?</h3>
-          <textarea name="editable_content"></textarea>
+          <div class="gated-content" data-gate-id="editable_content">
+            <h3 class="h2">What kind of content do you want to be able to edit?</h3>
+            <textarea name="editable_content"></textarea>
+          </div>
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
         </div>
@@ -97,15 +102,19 @@
             {% include molecules/input-select.html required: true
             options: "Yes, No"
             switch: true
-            name: "existing_site" %}
+            name: "existing_site"
+            gateway: "existing_site_address" %}
           </div>
 
-          <h3 class="h2">Are you open to sharing your site?</h3>
-          <p>
-            It would be great to see what we’re working with, but if you can’t share right now, feel free to leave this
-            section blank
-          </p>
-          <input type="text" name="existing_site_address">
+          <div class="gated-content" data-gate-id="existing_site_address">
+            <h3 class="h2">Are you open to sharing your site?</h3>
+            <p>
+              It would be great to see what we’re working with, but if you can’t share right now, feel free to leave
+              this
+              section blank
+            </p>
+            <input type="text" name="existing_site_address">
+          </div>
 
           {% include molecules/form-btns.html primary_btn_copy: "Next" back_button: true %}
         </div>

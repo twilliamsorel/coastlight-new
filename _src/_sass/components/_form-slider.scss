@@ -1,3 +1,13 @@
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .component.form-slider {
   overflow: hidden;
 
@@ -29,6 +39,16 @@
   .error-wrapper {
     width: 100%;
     position: relative;
+  }
+
+  .gated-content {
+    display: none;
+    opacity: 0;
+
+    &.revealed {
+      display: block;
+      animation: reveal 400ms forwards;
+    }
   }
 
   h3 {

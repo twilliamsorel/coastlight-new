@@ -866,6 +866,14 @@ form textarea {
   margin-bottom: 24px;
 }
 
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .component.form-slider {
   overflow: hidden;
 }
@@ -895,6 +903,14 @@ form textarea {
 .component.form-slider .error-wrapper {
   width: 100%;
   position: relative;
+}
+.component.form-slider .gated-content {
+  display: none;
+  opacity: 0;
+}
+.component.form-slider .gated-content.revealed {
+  display: block;
+  animation: reveal 400ms forwards;
 }
 .component.form-slider h3 {
   margin-bottom: 24px;
