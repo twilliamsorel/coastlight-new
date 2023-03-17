@@ -1,5 +1,5 @@
 ---
-title: Beans n rice 
+title: Beans 'n rice 
 color: 'linear-gradient(180deg, #DD422A 0%, #C05C4D 100%);'
 layout: portfolio
 date: 2023-01-08
@@ -27,4 +27,4 @@ images:
 
 ---
 
-placeholder. Content Will go here, eventually.
+Beans 'n Rice was a project that Trevor Sorel came up with while exploring concepts in user experience design. Developed a brand and application to ease the difficulties of meal planning on a budget. The app utilized a monochromatic color scheme and a clear, simple typeface to appear crisp and legible.

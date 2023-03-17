@@ -17,4 +17,6 @@ images:
 
 ---
 
-placeholder. Content Will go here, eventually.9FCFF
+Highways in the West is a website hosting the EP of a local Colorado musician. 
+
+Coastlight designed the brand and logo, as well as the website, and hosted it as a simple static site in the cloud.

@@ -20,4 +20,6 @@ images:
 
 ---
 
-placeholder. Content Will go here, eventually.
+Jeffrey Haver is an entrepreneur and blogger who focuses on Christian issues. 
+
+We helped Jeff to migrate his blog from a dated wordpress site to a custom static solution. We came up with a new brand, as well as redesigned the site to be simpler, more legible, and easy to navigate. Of note here was a custom search feature we built into the site. 

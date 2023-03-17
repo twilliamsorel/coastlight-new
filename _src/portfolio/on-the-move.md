@@ -20,4 +20,6 @@ images:
 
 ---
 
-placeholder. Content Will go here, eventually.
+On the Move was a concept application designed by Trevor Sorel as he was investigating user experience. The app was designed to help movers track the progress of their moves when working with hired professionals. 
+
+Trevor (Coastlight) developed the brand identity, based on greens that evoke summer and the grassy fields of a new home. He designed the app with minimalism and clarity in mind, focus on a few key elements of functionality that would give the user the most value. From user interviews he determined this to be an interactive map of the moving truck's current location.

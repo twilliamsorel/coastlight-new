@@ -23,4 +23,6 @@ images:
 
 ---
 
-placeholder. Content Will go here, eventually.
+Better Build is web blogging platform aimed at servicing the fitness community with articles on exercise, lifestyle, and performance. 
+
+Coastlight managed this project from end to end: developing a brand image, as well as designing and building the site. We used metallic textures and bold font faces to create a sense of intensity and masculinity that fit with the brand. The color scheme of blue, yellow, and white subtly evokes collegiate sports, which we feel also lends itself to the fitness-oriented brand. 

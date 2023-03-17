@@ -22,4 +22,6 @@ images:
 
 ---
 
-placeholder. Content Will go here, eventually.
+Amplified Space is an early-stage aerospace technology startup, focused on building efficient batteries for satellites, rovers, and other interplanetary vehicles that require longevity for lengthy missions.
+
+Coastlight assisted the founder in developing a brand vision, including a color pallet, business name, and design motifs, as well as designed, built, and hosted their site. The client wanted bold colors that contrasted other brand identities in the field, as well as a name that immediately evoked the company's mission. We came up with a design to satisfy those requirements.  

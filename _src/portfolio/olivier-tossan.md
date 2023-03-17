@@ -20,4 +20,6 @@ images:
 
 ---
 
-placeholder. Content Will go here, eventually.
+Olivier Tossan is an artist and creative developer with over over a decade of experience in animation. 
+
+We worked with him to create a custom visual portfolio to showcase his work to future employers and clients. This was a collaborative effort, and we worked with Olivier, who designed his own logo and gave feedback on the designs.

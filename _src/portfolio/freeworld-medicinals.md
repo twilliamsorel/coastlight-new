@@ -20,4 +20,7 @@ images:
 
 ---
 
-placeholder. Content Will go here, eventually.
+Freeworld Medicinals is an independent CBD distillery operating out of Northern Colorado. 
+
+Coastlight worked with Freeworld to migrate and redesign their existing eCommerce website to a more customized and efficient platform. Along with redesigning the site with a more clean and modern feel, we implemented a robust architecture by rebuilding it as a static asset, hosted in the cloud. The result is a fast and secure ecommerce site that scales with demand.
+
