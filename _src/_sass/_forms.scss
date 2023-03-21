@@ -18,4 +18,16 @@ form {
     color: $neutral-200;
     margin-bottom: $spacing-600;
   }
+
+  .g-recaptcha {
+    margin-bottom: $spacing-600;
+  }
+
+  .submit-container {
+    text-align: center;
+
+    @media screen and (min-width: $screen-md) {
+      text-align: right;
+    }
+  }
 }

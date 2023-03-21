@@ -66,10 +66,6 @@ section a {
   text-decoration: underline;
 }
 
-.txt-right {
-  text-align: right;
-}
-
 .txt-white {
   color: #FCFCFF;
 }
@@ -510,6 +506,17 @@ form textarea {
   font-weight: 400;
   color: #383C42;
   margin-bottom: 24px;
+}
+form .g-recaptcha {
+  margin-bottom: 24px;
+}
+form .submit-container {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  form .submit-container {
+    text-align: right;
+  }
 }
 
 .component.header {
