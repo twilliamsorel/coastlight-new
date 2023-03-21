@@ -66,7 +66,7 @@ section a {
   text-decoration: underline;
 }
 
-.text-right {
+.txt-right {
   text-align: right;
 }
 
@@ -509,9 +509,6 @@ form textarea {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #383C42;
-  margin-bottom: 24px;
-}
-form .g-recaptcha {
   margin-bottom: 24px;
 }
 
