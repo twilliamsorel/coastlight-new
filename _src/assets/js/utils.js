@@ -17,8 +17,7 @@ export function getFormData(formSelector = "form") {
   const inputs = Array.from(form.querySelectorAll('[name]'));
 
   const data = inputs.reduce((acc, input, i) => {
-    if (i != 0) acc += '&';
-    return acc += `${input.getAttribute('name')}=${input.value ? input.value : input.getAttribute('data-value')}`;
+    return acc += `${i != 0 ? '&' : ''}${input.getAttribute('name')}=${input.value ? input.value : input.getAttribute('data-value')}`;
   }, '');
 
   return data;
