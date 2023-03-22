@@ -1,5 +1,6 @@
 ---
 title: Ready outdoors
+description: "Ready Outdoors was another concept application designed by Trevor Sorel as he explored user experience design."
 color: 'linear-gradient(180deg, #416F16 0%, #60823F 100%);'
 layout: portfolio
 services: 

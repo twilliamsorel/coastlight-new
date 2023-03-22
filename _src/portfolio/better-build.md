@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: Better build 
+description: "Better Build is web blogging platform aimed at servicing the fitness community with articles on exercise, lifestyle, and performance. "
 date: 2023-01-07
 link: https://betterbuild.fitness
 color: 'radial-gradient(50% 50% at 50% 50%, #2974CC 0%, #245EA1 100%);'

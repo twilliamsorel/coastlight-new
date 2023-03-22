@@ -1,5 +1,6 @@
 ---
 title: Beans 'n rice 
+description: Beans 'n Rice was a project that Trevor Sorel came up with while exploring concepts in user experience design.
 color: 'linear-gradient(180deg, #DD422A 0%, #C05C4D 100%);'
 layout: portfolio
 date: 2023-01-08

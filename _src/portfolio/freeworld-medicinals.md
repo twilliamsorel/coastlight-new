@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: Freeworld Medicinals
+description: "Freeworld Medicinals is an independent CBD distillery operating out of Northern Colorado."
 date: 2023-01-01
 link: https://freeworldmedicinals.com
 color: '#202A43'

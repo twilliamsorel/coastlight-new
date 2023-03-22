@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: On the Move
+description: "On the Move was a concept application designed by Trevor Sorel as he was investigating user experience."
 date: 2023-01-09
 color: '#217D01'
 services:

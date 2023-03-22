@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: Terraforma International
+description: "Terraforma is an agricultural technology startup that builds advanced composting systems using biotechnology."
 date: 2023-01-02
 link: https://terraformasoil.com
 color: '#78A598'

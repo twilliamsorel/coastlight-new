@@ -1,5 +1,6 @@
 ---
 title: Middle ground 
+description: "Middle Ground was a news blogging concept created by Trevor Sorel."
 color: '#394584'
 layout: portfolio
 date: 2023-01-02

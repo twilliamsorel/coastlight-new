@@ -1,6 +1,7 @@
 ---
 title: Burlington 
 color: '#373333'
+description: "The above burlington logo was a practice piece designed by Trevor Sorel."
 layout: portfolio
 date: 2023-01-03
 services: 

@@ -1,6 +1,7 @@
 ---
 title: Traveler
 color: '#F9FCFF'
+description: "Traveler is a concept logo created by Trevor Sorel, designed for a personal travel blog."
 layout: portfolio
 date: 2023-01-04
 services: 

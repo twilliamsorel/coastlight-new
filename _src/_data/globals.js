@@ -4,6 +4,5 @@ module.exports = async function () {
     cssPath: process.env.ENVIRONMENT === 'production' ? '/assets/css/main-min.css' : '/assets/css/main.css',
     jsPath: process.env.ENVIRONMENT === 'production' ? '/assets/css/main-min.js' : '/assets/js/main.js',
     "title": "Coastlight Digital",
-    "Description": "The marketing website of the digital agency Coastlight Digital."
   };
 };
