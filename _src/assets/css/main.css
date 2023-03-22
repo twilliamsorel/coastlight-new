@@ -1143,7 +1143,7 @@ form .submit-container {
   height: 12px;
   position: sticky;
   top: 108px;
-  z-index: 3;
+  z-index: 2;
 }
 .molecule.loading-bar .bar {
   position: absolute;

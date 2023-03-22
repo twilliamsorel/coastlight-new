@@ -34,6 +34,10 @@ export function recurseDOM(e, target) {
   }
 };
 
+export function stringToObject(string) {
+  return string.split('&').reduce((a, v) => ({ ...a, [v.split('=')[0]]: v.split('=')[1] }), {});
+};
+
 export function sendForm(formSelector = 'form') {
   const form = document.querySelector(formSelector);
 
@@ -41,6 +45,12 @@ export function sendForm(formSelector = 'form') {
     e.preventDefault();
 
     const data = getFormData(formSelector) + '&recipient=trevor@coastlightdigital.com';
+    const structuredData = stringToObject(data);
+
+    if (structuredData['g-recaptcha-response'] == 'null') {
+      document.querySelector('.g-recaptcha').style.border = '2px solid red';
+      return;
+    }
 
     postRequest(e.target.action, data, (res) => {
       if (res) {
