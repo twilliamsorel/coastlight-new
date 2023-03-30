@@ -28,4 +28,4 @@ images:
 
 ---
 
-Beans 'n Rice was a project that Trevor Sorel came up with while exploring concepts in user experience design. Developed a brand and application to ease the difficulties of meal planning on a budget. The app utilized a monochromatic color scheme and a clear, simple typeface to appear crisp and legible.
+Beans 'n Rice was a project that Trevor Sorel came up with while exploring concepts in user experience design. He developed this brand and application to ease the difficulties of meal planning on a budget. The app utilized a monochromatic color scheme and a clear, simple typeface to appear crisp and legible.
