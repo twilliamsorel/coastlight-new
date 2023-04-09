@@ -26,4 +26,4 @@ export default function sliderAnimator() {
       slideContainer.scrollLeft = dynamicOffset;
     }
   });
-}
+};
