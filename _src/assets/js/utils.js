@@ -12,16 +12,11 @@ export function postRequest(url, data, callback) {
   xhr.send(data);
 };
 
-export function getFormData(formSelector = "form") {
-  const form = document.querySelector(formSelector);
-  const inputs = Array.from(form.querySelectorAll('[name]'));
-
-  const data = inputs.reduce((acc, input, i) => {
-    return acc += `${i != 0 ? '&' : ''}${input.getAttribute('name')}=${input.value ? input.value : input.getAttribute('data-value')}`;
-  }, '');
-
-  return data;
-};
+export const getFormData = (selector = 'form') =>
+  Array.from(document.querySelector(selector).querySelectorAll('[name]'))
+    .reduce((acc, input, i) => {
+      return acc += `${i != 0 ? '&' : ''}${input.getAttribute('name')}=${input.value ? input.value : input.getAttribute('data-value')}`;
+    }, '');
 
 export function recurseDOM(e, target) {
   if (e === target) {
