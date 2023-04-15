@@ -5,11 +5,15 @@ import gallery from './gallery.js';
 import { formSlider, submitSliderForm } from './formSlider.js';
 import selectBoxes from './selectBoxes.js';
 import { sendForm } from './utils.js';
+import cookieBanner from './cookieBanner.js';
 
 // INITIALIZING MAIN NAVIGATION JS
 mainMenuScrolling();
 toggleMobileMenu();
 selectBoxes();
+
+// CHECKING / INITIALIZING COOKIE BANNER
+cookieBanner();
 
 if (window.location.pathname.match('/web-design/$')) {
   sliderAnimator();

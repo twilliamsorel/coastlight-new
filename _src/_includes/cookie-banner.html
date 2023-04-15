@@ -1,0 +1,21 @@
+<div class="cookie-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-1">
+        <h3>Cookie warning</h3>
+        <p>
+          This site uses cookies to track your general activity on the site for marketing purposes. If you would prefer
+          not to be tracked, simply reject the cookies and they will not be loaded in this session.
+        </p>
+      </div>
+      <div class="col-4 btn-wrapper">
+        {% include molecules/btn-container.html primary_btn_copy: "Accept"
+        secondary_btn_copy: "Reject"
+        primary_btn_color: "orange"
+        secondary_btn_color: "white-outline"
+        primary_btn_data: "data-cookies='accept'"
+        secondary_btn_data: "data-cookies='reject'" %}
+      </div>
+    </div>
+  </div>
+</div>

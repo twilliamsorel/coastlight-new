@@ -1,0 +1,24 @@
+.cookie-banner {
+  position: fixed;
+  padding: $spacing-900 0;
+  bottom: 0;
+  width: 100%;
+  background: $primary-100;
+  color: $neutral-1000;
+  display: none;
+
+  h3 {
+    margin-bottom: $spacing-400;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+  }
+}

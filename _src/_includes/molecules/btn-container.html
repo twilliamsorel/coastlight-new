@@ -1,4 +1,6 @@
 <div class="molecule btn-container">
-  <a class="btn {{ secondary_btn_color }} standard" href="{{ secondary_btn_link }}">{{ secondary_btn_copy }}</a>
-  <a class="btn {{ primary_btn_color }} standard" href="{{ primary_btn_link }}">{{ primary_btn_copy }}</a>
+  <a class="btn {{ secondary_btn_color }} standard" href="{{ secondary_btn_link }}" {% if secondary_btn_data %}{{
+    secondary_btn_data }}{% endif %}>{{ secondary_btn_copy }}</a>
+  <a class="btn {{ primary_btn_color }} standard" href="{{ primary_btn_link }}" {% if primary_btn_data %}{{
+    primary_btn_data }}{% endif %}>{{ primary_btn_copy }}</a>
 </div>
