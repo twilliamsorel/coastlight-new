@@ -532,13 +532,42 @@ form .submit-container {
   margin-bottom: 16px;
 }
 .cookie-banner p {
-  margin-bottom: 0;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 992px) {
+  .cookie-banner p {
+    margin-bottom: 0;
+  }
 }
 .cookie-banner .btn-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+}
+.cookie-banner .btn-wrapper .btn-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .cookie-banner .btn-wrapper .btn-container {
+    justify-content: end;
+  }
+  .cookie-banner .btn-wrapper .btn-container .btn:last-child {
+    margin-top: 12px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .cookie-banner .btn-wrapper .btn-container .btn:last-child {
+    margin-top: initial;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cookie-banner .btn-wrapper {
+    justify-content: end;
+  }
 }
 
 .component.header {
@@ -1062,12 +1091,12 @@ form .submit-container {
   width: 100%;
 }
 
-.molecule.btn-container a:first-child {
-  margin-right: 4px;
+.molecule.btn-container a:last-child {
+  margin-left: 4px;
 }
 @media screen and (min-width: 576px) {
-  .molecule.btn-container a:first-child {
-    margin-right: 12px;
+  .molecule.btn-container a:last-child {
+    margin-left: 12px;
   }
 }
 

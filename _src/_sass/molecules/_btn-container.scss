@@ -1,9 +1,9 @@
 .molecule.btn-container {
-  a:first-child {
-    margin-right: $spacing-base;
+  a:last-child {
+    margin-left: $spacing-base;
 
     @media screen and (min-width: $screen-sm) {
-      margin-right: $spacing-300;
+      margin-left: $spacing-300;
     }
   }
 }
