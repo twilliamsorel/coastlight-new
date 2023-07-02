@@ -7,24 +7,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description"
     content="{{ description | default: 'Portfolio and business website for the digital agency Coastlight Digital.' }}">
-  <meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
+  <meta name="robots" content="{{ robots | default: 'index,follow' }}">
   {% include og-tags.html %}
 
   <!-- FAVICONS /-->
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-  {% if globals.environment == "production" %}
-  <!-- Google tag (gtag.js), if accepted -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-45KCHHKCM7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-45KCHHKCM7');
-  </script>
-  {% endif %}
+  {% if globals.environment == "production" %}{% endif %}
 
   <!-- GOOGLE FONT LINKS /-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
