@@ -2,7 +2,7 @@
 layout: portfolio
 title: Jeffrey Haver
 description: "Highways in the West is a website hosting the EP of a local Colorado musician."
-date: 2023-01-05
+date: 2023-08-27
 link: https://jeffreyhaver.com/
 color: '#F0E6D1'
 services:

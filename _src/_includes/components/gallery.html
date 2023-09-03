@@ -5,14 +5,14 @@
       <div class="col-10 offset-1">
         <div class="gallery-grid">
           {% if type == "logos" %}
-          {% for logo in collections.logos %}
+          {% for logo in collections.logos reversed %}
           {% include molecules/gallery-card.html color: logo.data.color
           title: logo.data.title
           logo: logo.data.logo
           link: logo.page.url %}
           {% endfor %}
           {% elsif type == 'sites' %}
-          {% for site in collections.sites %}
+          {% for site in collections.sites reversed %}
           {% include molecules/gallery-card.html color: site.data.color
           title: site.data.title
           logo: site.data.logo

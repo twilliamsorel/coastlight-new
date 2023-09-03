@@ -2,7 +2,7 @@
 title: Highways in the west 
 layout: portfolio
 description: "Highways in the West is a website hosting the EP of a local Colorado musician."
-date: 2023-01-06
+date: 2023-08-26
 color: '#F1F1F1'
 link: https://highwaysinthewest.com/
 services: 

@@ -3,7 +3,7 @@ layout: portfolio
 title: Boesel built
 description: "Boesel Built is a general contracting business run out of Marin County, focusing on residential construction projects."
 color: '#F8FEFF'
-date: 2023-01-01
+date: 2023-09-01
 services: 
   - Logo &amp; branding
 tags: 

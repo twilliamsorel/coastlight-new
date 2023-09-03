@@ -2,7 +2,7 @@
 layout: portfolio
 title: Olivier Tossan
 description: "Olivier Tossan is an artist and creative developer with over over a decade of experience in animation."
-date: 2023-01-04
+date: 2023-08-28
 link: https://oliviertossansart.com/
 color: '#000000'
 services:

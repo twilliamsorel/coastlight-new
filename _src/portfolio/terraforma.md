@@ -2,7 +2,7 @@
 layout: portfolio
 title: Terraforma International
 description: "Terraforma is an agricultural technology startup that builds advanced composting systems using biotechnology."
-date: 2023-01-02
+date: 2023-09-01
 link: https://terraformasoil.com
 color: '#78A598'
 services:
@@ -14,10 +14,12 @@ tags:
   - sites
 logo: '/assets/img/logos/terraforma.svg'
 images:
-  - '/assets/img/portfolio/terraforma/fs-1.png'
-  - '/assets/img/portfolio/terraforma/fs-2.png'
-  - '/assets/img/portfolio/terraforma/fs-3.png'
-  - '/assets/img/portfolio/terraforma/fs-4.png'
+  - '/assets/img/portfolio/terraforma/fs-1.jpg'
+  - '/assets/img/portfolio/terraforma/fs-2.jpg'
+  - '/assets/img/portfolio/terraforma/fs-3.jpg'
+  - '/assets/img/portfolio/terraforma/fs-4.jpg'
+  - '/assets/img/portfolio/terraforma/fs-5.jpg'
+  - '/assets/img/portfolio/terraforma/fs-6.jpg'
 
 ---
 

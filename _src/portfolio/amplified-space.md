@@ -2,7 +2,7 @@
 layout: portfolio
 description: "Amplified Space is an early-stage aerospace technology startup, focused on building efficient batteries for satellites, rovers, and other interplanetary vehicles that require longevity for lengthy missions."
 title: Amplified Space
-date: 2023-01-03
+date: 2023-08-29
 link: https://amplifiedspace.com/
 color: '#1F1E1E'
 services:
