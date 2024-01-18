@@ -4,7 +4,7 @@
       "bg_color": "bg-metallic",
       "numeral": "I",
       "header": "Brand identity",
-      "description": "What is your story? What are you trying to convey? In this step, I’ll work with you to develop (or redevelop) your image. We’ll define your story and values, and will use that to inform the creative development of your brand.",
+      "description": "What is your story? What are you trying to convey? In this step, we’ll work with you to develop (or redevelop) your image. We’ll define your story and values, and will use that to inform the creative development of your brand.",
       "deliverables": [
         "Logo",
         "Color pallet",
@@ -27,7 +27,7 @@
       "bg_color": "bg-metallic",
       "numeral": "III",
       "header": "Web design",
-      "description": "Now that your content is flushed out, we’re ready to begin placing it in a visually appealing layout. I’ll start with wireframes that we’ll use to determine general content hierarchy, and then will jump into high fidelity mockups.",
+      "description": "Now that your content is flushed out, we’re ready to begin placing it in a visually appealing layout. we’ll start with wireframes that we’ll use to determine general content hierarchy, and then will jump into high fidelity mockups.",
       "deliverables": [
         "Website wireframes",
         "Website mockup"
@@ -37,7 +37,7 @@
       "bg_color": "bg-blue",
       "numeral": "IV",
       "header": "Web development",
-      "description": "With the high fidelity mockups in hand, I’m ready to start coding. Depending on your project needs, this step may vary, but typically I’ll be building a static website in a modern SSG framework like Eleventy.",
+      "description": "With the high fidelity mockups in hand, we're ready to start coding. Depending on your project needs, this step may vary, but typically we’ll be building a static website in a modern SSG framework like Eleventy.",
       "deliverables": [
         "Website code",
         "Digital assets"
@@ -47,7 +47,7 @@
       "bg_color": "bg-metallic",
       "numeral": "V",
       "header": "Deployment",
-      "description": "Now that your digital asset is ready, all that’s left to do is launch it. I’ll host your website or app on a cloud-based platform that scales with you as your traffic grows. Alternatively, I can also hand off the finished code to you or your organization.",
+      "description": "Now that your digital asset is ready, all that’s left to do is launch it. We’ll host your website or app on a cloud-based platform that scales with you as your traffic grows. Alternatively, we can also hand off the finished code to you or your organization.",
       "deliverables": [
         "Live website"
       ]
@@ -56,7 +56,7 @@
       "bg_color": "bg-blue",
       "numeral": "VI",
       "header": "Ongoing maintenance",
-      "description": "I offer tiered support plans to fit every budget. Starting at basic hosting and maintenance, and scaling up to prepaid (discounted) support hours and analytics reporting. You’re as covered as you want to be."
+      "description": "We offer tiered support plans to fit every budget. Starting at basic hosting and maintenance, and scaling up to prepaid (discounted) support hours and analytics reporting. You’re as covered as you want to be."
     }
   ]
 }
