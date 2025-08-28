@@ -19,7 +19,7 @@ if (window.location.pathname.match('/web-design/$')) {
   sliderAnimator();
 }
 
-if (window.location.pathname.match('/web-design/process/$')) {
+if (window.location.pathname.match('/web-design/process(/)?$')) {
   sidebar();
 }
 
