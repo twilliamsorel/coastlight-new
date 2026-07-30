@@ -19,7 +19,7 @@ $neutral-1100: #FCFCFF;
 $font-color: $neutral-100;
 
 // spacing
-$spacing-base: 4px;
+$spacing-base: .25rem;
 $spacing-200: $spacing-base * 2;
 $spacing-300: $spacing-base * 3;
 $spacing-400: $spacing-base * 4;
@@ -39,10 +39,10 @@ $spacing-1900: $spacing-base * 19;
 $spacing-2000: $spacing-base * 20;
 
 // bespoke sizes
-$block-padding: 80px;
-$block-padding-med: 120px;
-$block-padding-large: 144px;
-$nav-height: 108px;
+$block-padding: 5rem;
+$block-padding-med: 7.5rem;
+$block-padding-large: 9rem;
+$nav-height: 6.75rem;
 
 // z-indexes
 $z-index-mobile-nav: 4;
@@ -53,16 +53,16 @@ $z-index-base: 1;
 // fonts
 $font-family-header: 'Raleway', sans-serif;
 $font-family-body: 'Lato', sans-serif;
-$font-size-small: 14px;
-$font-size-base: 16px;
-$font-size-100: 18px;
-$font-size-200: 20px;
-$font-size-300: 24px;
-$font-size-400: 28px;
-$font-size-500: 32px;
-$font-size-600: 36px;
-$font-size-700: 40px;
-$font-size-800: 44px;
+$font-size-small: .875rem;
+$font-size-base: 1rem;
+$font-size-100: 1.125rem;
+$font-size-200: 1.25rem;
+$font-size-300: 1.5rem;
+$font-size-400: 1.75px;
+$font-size-500: 2rem;
+$font-size-600: 2.25rem;
+$font-size-700: 2.5rem;
+$font-size-800: 2.75px;
 
 // breakpoints
 $screen-xs: 350px;

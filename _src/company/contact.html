@@ -9,21 +9,42 @@ color: "bg-blue"
 image: "/assets/img/illustrations/illu_handshake-square.svg"
 content: "Use the form below to send me a message. Alternatively, you can use one of the contact methods listed below.
 <br><br>
-<strong>Email</strong>: <a href='mailto:Trevor@coastlightdigital.com'>Trevor@coastlightdigital.com</a><br>
+<strong>Email</strong>: <a href='mailto:Trevor@coastlightdigital.com'>Trevor@coastlightdigital.com</a>
 <br><br>
-<a href='https://www.linkedin.com/company/coastlight-digital/' target='_blank'><img src='/assets/img/ico_linkedin.svg'
-    alt='linkedin icon'></a>
 "
 %}
 
 {% capture inner_content %}
 <div class="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
   <h3 class="h2 text-center">Contact us</h3>
-  <p>
-    Coastlight Digital is suspending services and is no longer taking on new clients. Consequently,
-    we have shut down our contact form and will not be taking new inquiries. The site remains up as a portfolio piece. 
-    We wish you luck in finding digital services that suit your needs. 
-  </p>
+    <form action="https://hooks.zapier.com/hooks/catch/3631635/4631bcx/" method="POST">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <input required type="text" placeholder="first name" name="first_name">
+        </div>
+        <div class="col-12 col-md-6">
+          <input required type="text" placeholder="last name" name="last_name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <input type="text" placeholder="phone number" name="phone">
+        </div>
+        <div class="col-12 col-md-6">
+          <input required type="text" placeholder="email" name="email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <textarea placeholder="message" name="message"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          {% include molecules/form-btns.html primary_btn_copy: "Submit" back_button: false form_submit: true %}
+        </div>
+      </div>
+    </form>
 </div>
 {% endcapture %}
 

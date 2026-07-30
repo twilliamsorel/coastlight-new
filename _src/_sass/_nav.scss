@@ -7,14 +7,10 @@
   overflow: hidden;
 }
 
-.nav-wrapper {
-  position: relative;
-  height: 164px;
-}
-
 .nav-bar {
   padding: 52px 0;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   background: $neutral-1100;
   transition: 300ms padding;

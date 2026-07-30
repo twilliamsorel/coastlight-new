@@ -12,47 +12,47 @@ h6 {
 
 h2,
 .h2 {
-  font-size: 28px;
+  font-size: 1.75px;
   line-height: 40px;
   font-weight: bold;
 }
 @media screen and (min-width: 350px) {
   h2,
   .h2 {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 44px;
   }
 }
 @media screen and (min-width: 576px) {
   h2,
   .h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 48px;
   }
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 @media screen and (min-width: 576px) {
   h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 @media screen and (min-width: 576px) {
   h4 {
-    font-size: 28px;
+    font-size: 1.75px;
   }
 }
 
 p {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 32px;
 }
 
@@ -90,19 +90,19 @@ section a {
 }
 .btn.standard {
   width: 140px;
-  font-size: 18px;
-  padding: 12px 0;
+  font-size: 1.125rem;
+  padding: 0.75rem 0;
 }
 @media screen and (min-width: 576px) {
   .btn.standard {
     width: 180px;
-    font-size: 24px;
-    padding: 12px 0;
+    font-size: 1.5rem;
+    padding: 0.75rem 0;
   }
 }
 .btn.small {
-  padding: 8px 12px;
-  font-size: 20px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.25rem;
 }
 .btn.blue {
   background: #257BEC;
@@ -121,7 +121,7 @@ section a {
 .btn.white-outline {
   background: transparent;
   color: #FCFCFF;
-  padding: 8px 0;
+  padding: 0.5rem 0;
   border: 4px solid #FCFCFF;
 }
 .btn.white-outline.orange:hover {
@@ -135,7 +135,7 @@ section a {
 .btn.blue-outline {
   background: transparent;
   color: #257BEC;
-  padding: 8px 0;
+  padding: 0.5rem 0;
   border: 4px solid #257BEC;
   width: initial;
 }
@@ -148,18 +148,18 @@ section a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   border: 1px solid #257BEC;
   font-weight: 500;
 }
 .btn.blue-outline.icon svg {
-  margin-left: 12px;
+  margin-left: 0.75rem;
   pointer-events: none;
 }
 .btn.orange-outline {
   background: transparent;
   color: #E89B30;
-  padding: 8px 0;
+  padding: 0.5rem 0;
   border: 4px solid #F39C2A;
 }
 .btn.orange-outline:hover {
@@ -167,9 +167,9 @@ section a {
   color: #FCFCFF;
 }
 .btn.orange-outline.back {
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   box-sizing: border-box;
-  margin-right: 12px;
+  margin-right: 0.75rem;
 }
 .btn.orange-outline.back svg {
   width: auto;
@@ -181,7 +181,7 @@ section a {
 }
 @media screen and (min-width: 576px) {
   .btn.orange-outline.back {
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
   }
   .btn.orange-outline.back svg {
     max-height: 30px;
@@ -200,21 +200,17 @@ section a {
   overflow: hidden;
 }
 
-.nav-wrapper {
-  position: relative;
-  height: 164px;
-}
-
 .nav-bar {
   padding: 52px 0;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   background: #FCFCFF;
   transition: 300ms padding;
   z-index: 3;
 }
 .nav-bar.scrolled {
-  padding: 24px 0;
+  padding: 1.5rem 0;
 }
 .nav-bar .inner-nav-wrapper {
   display: flex;
@@ -228,28 +224,28 @@ section a {
   align-items: center;
 }
 .nav-bar .logo h1 {
-  margin: 0 0 0 24px;
-  font-size: 32px;
+  margin: 0 0 0 1.5rem;
+  font-size: 2rem;
 }
 @media screen and (min-width: 350px) {
   .nav-bar .logo h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 @media screen and (min-width: 576px) {
   .nav-bar .logo h1 {
-    margin: 0 0 0 24px;
-    font-size: 40px;
+    margin: 0 0 0 1.5rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .nav-bar .logo h1 {
-    margin: 0 0 0 24px;
+    margin: 0 0 0 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav-bar .logo h1 {
-    margin: 0 0 0 36px;
+    margin: 0 0 0 2.25rem;
   }
 }
 .nav-bar nav {
@@ -266,12 +262,12 @@ section a {
 }
 .nav-bar nav ul li {
   display: inline-block;
-  margin-left: 24px;
+  margin-left: 1.5rem;
   cursor: pointer;
 }
 @media screen and (min-width: 1400px) {
   .nav-bar nav ul li {
-    margin-left: 28px;
+    margin-left: 1.75rem;
   }
 }
 .nav-bar nav ul li ul {
@@ -281,15 +277,15 @@ section a {
   border: 1px solid rgba(88, 89, 91, 0.24);
   min-width: 200px;
   z-index: 4;
-  margin-top: 16px;
-  margin-left: -12px;
+  margin-top: 1rem;
+  margin-left: -0.75rem;
 }
 .nav-bar nav ul li ul::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 20px;
-  top: -20px;
+  height: 1.25rem;
+  top: -1.25rem;
 }
 .nav-bar nav ul li ul li {
   display: block;
@@ -299,8 +295,8 @@ section a {
 .nav-bar nav ul li ul li a {
   display: block;
   margin: 0;
-  padding: 12px 16px;
-  font-size: 20px;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 .nav-bar nav ul li ul li a:hover {
@@ -336,7 +332,7 @@ section a {
   padding: 0 32px 0 72px;
 }
 .mobile-nav header h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   margin: 0;
 }
@@ -350,11 +346,11 @@ section a {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .mobile-nav nav ul li {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   padding: 0 72px;
 }
 .mobile-nav nav ul li a {
@@ -370,7 +366,7 @@ section a {
   background: #F39C2A;
   display: inline-block;
   width: 100%;
-  padding: 8px 72px;
+  padding: 0.5rem 72px;
 }
 
 footer {
@@ -382,14 +378,14 @@ footer {
 footer img.logo {
   width: 100%;
   max-width: 400px;
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
 footer .spacer {
-  height: 24px;
+  height: 1.5rem;
 }
 @media screen and (min-width: 576px) {
   footer .spacer {
-    height: 24px;
+    height: 1.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -398,17 +394,17 @@ footer .spacer {
   }
 }
 footer h3 {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 footer ul {
   list-style: none;
   padding: 0;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media screen and (min-width: 576px) {
   footer ul {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 footer ul.faded {
@@ -427,7 +423,7 @@ footer ul.faded {
 }
 footer ul.faded li {
   display: inline-block;
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 @media screen and (min-width: 768px) {
   footer ul.faded li {
@@ -435,11 +431,11 @@ footer ul.faded li {
   }
 }
 footer ul li {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   footer ul li {
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
 }
 footer .button {
@@ -455,10 +451,10 @@ footer .copyright-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 footer .copyright-wrapper span:first-child {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 @media screen and (min-width: 350px) {
   footer .copyright-wrapper {
@@ -468,7 +464,7 @@ footer .copyright-wrapper span:first-child {
 }
 @media screen and (min-width: 576px) {
   footer .copyright-wrapper {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   footer .copyright-wrapper span:first-child {
     margin-bottom: 0;
@@ -494,21 +490,21 @@ section.form {
   }
 }
 section.form h3 {
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 
 form input:not([type=submit]),
 form textarea {
   width: 100%;
-  padding: 16px 24px;
-  font-size: 20px;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #383C42;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 form .g-recaptcha {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 form .submit-container {
   text-align: center;
@@ -521,7 +517,7 @@ form .submit-container {
 
 .cookie-banner {
   position: fixed;
-  padding: 36px 0;
+  padding: 2.25rem 0;
   bottom: 0;
   width: 100%;
   background: #257BEC;
@@ -529,10 +525,10 @@ form .submit-container {
   display: none;
 }
 .cookie-banner h3 {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .cookie-banner p {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 992px) {
   .cookie-banner p {
@@ -556,7 +552,7 @@ form .submit-container {
     justify-content: end;
   }
   .cookie-banner .btn-wrapper .btn-container .btn:last-child {
-    margin-top: 12px;
+    margin-top: 0.75rem;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -574,16 +570,16 @@ form .submit-container {
   position: relative;
 }
 .component.header .content-area {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 @media screen and (min-width: 768px) {
   .component.header .content-area {
-    padding: 120px 0;
+    padding: 7.5rem 0;
   }
 }
 @media screen and (min-width: 992px) {
   .component.header .content-area {
-    padding: 144px 0;
+    padding: 9rem 0;
   }
 }
 .component.header .content-area h2 {
@@ -591,16 +587,16 @@ form .submit-container {
   display: flex;
 }
 .component.header .content-area h2 .external-link {
-  margin-left: 20px;
-  margin-top: -4px;
+  margin-left: 1.25rem;
+  margin-top: -0.25rem;
 }
 .component.header .content-area .services {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: #FCFCFF;
-  margin-top: 24px;
-  font-size: 20px;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Lato", sans-serif;
   flex-wrap: wrap;
 }
@@ -609,10 +605,10 @@ form .submit-container {
   height: 8px;
   border-radius: 4px;
   background: #FCFCFF;
-  margin: 0 12px;
+  margin: 0 0.75rem;
 }
 .component.header .content-area .btn-container {
-  margin-top: 44px;
+  margin-top: 2.75rem;
 }
 .component.header .logo-container {
   display: flex;
@@ -655,26 +651,26 @@ form .submit-container {
   position: relative;
 }
 .component.section .content-area {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 @media screen and (min-width: 768px) {
   .component.section .content-area {
-    padding: 120px 0;
+    padding: 7.5rem 0;
   }
 }
 @media screen and (min-width: 992px) {
   .component.section .content-area {
-    padding: 144px 0;
+    padding: 9rem 0;
   }
 }
 .component.section .content-area h2 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .component.section .content-area p {
   margin-bottom: 0;
 }
 .component.section .content-area .btn-container {
-  margin-top: 44px;
+  margin-top: 2.75rem;
 }
 .component.section .illu-container {
   display: flex;
@@ -682,7 +678,7 @@ form .submit-container {
   justify-content: start;
   height: 100%;
   align-items: center;
-  padding: 80px 0;
+  padding: 5rem 0;
   /*
   @media screen and (min-width: $screen-xl) {
     justify-content: center;
@@ -692,12 +688,12 @@ form .submit-container {
 }
 @media screen and (min-width: 768px) {
   .component.section .illu-container {
-    padding: 120px 0;
+    padding: 7.5rem 0;
   }
 }
 @media screen and (min-width: 992px) {
   .component.section .illu-container {
-    padding: 144px 0;
+    padding: 9rem 0;
   }
 }
 .component.section .illu-container .illu {
@@ -707,16 +703,16 @@ form .submit-container {
 }
 
 .component.slider {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 @media screen and (min-width: 768px) {
   .component.slider {
-    padding: 120px 0;
+    padding: 7.5rem 0;
   }
 }
 @media screen and (min-width: 992px) {
   .component.slider {
-    padding: 144px 0;
+    padding: 9rem 0;
   }
 }
 .component.slider .scroll-container {
@@ -731,7 +727,7 @@ form .submit-container {
   display: none;
 }
 .component.slider h2 {
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 .component.slider .slide-container {
   width: 2436px;
@@ -751,17 +747,17 @@ form .submit-container {
 }
 
 .component.process-section {
-  padding: 80px 0;
+  padding: 5rem 0;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .component.process-section {
-    padding: 120px 0;
+    padding: 7.5rem 0;
   }
 }
 @media screen and (min-width: 992px) {
   .component.process-section {
-    padding: 144px 0;
+    padding: 9rem 0;
   }
 }
 .component.process-section.bg-blue {
@@ -772,13 +768,13 @@ form .submit-container {
   background: url("/assets/img/folder-white.svg") no-repeat;
 }
 .component.process-section .numeral {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .component.process-section .header {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .component.process-section h4 {
-  margin: 48px 0 0;
+  margin: 3rem 0 0;
 }
 .component.process-section .folders {
   list-style: none;
@@ -792,35 +788,35 @@ form .submit-container {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 24px 20px 0 0;
-  padding: 4px 4px 0;
+  margin: 1.5rem 1.25rem 0 0;
+  padding: 0.25rem 0.25rem 0;
   width: 140px;
   height: 100px;
   text-align: center;
   background: url("/assets/img/folder.svg") no-repeat;
   background-size: 100%;
   background-position: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #777B84;
 }
 
 .component.cta {
-  padding: 80px 0;
+  padding: 5rem 0;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .component.cta {
-    padding: 120px 0;
+    padding: 7.5rem 0;
   }
 }
 @media screen and (min-width: 992px) {
   .component.cta {
-    padding: 144px 0;
+    padding: 9rem 0;
   }
 }
 .component.cta h2 {
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 
 .component.gallery {
@@ -873,7 +869,7 @@ form .submit-container {
   flex-direction: row;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: min-content 1fr;
-  gap: 16px;
+  gap: 1rem;
   position: relative;
 }
 .component.image-gallery .gallery-container img {
@@ -930,7 +926,7 @@ form .submit-container {
   flex-direction: row;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: min-content 1fr;
-  gap: 16px;
+  gap: 1rem;
   position: relative;
 }
 .component.image-gallery-mobile .gallery-container img {
@@ -961,23 +957,23 @@ form .submit-container {
 }
 
 .component.text-section {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 @media screen and (min-width: 768px) {
   .component.text-section {
-    padding: 120px 0;
+    padding: 7.5rem 0;
   }
 }
 @media screen and (min-width: 992px) {
   .component.text-section {
-    padding: 144px 0;
+    padding: 9rem 0;
   }
 }
 .component.text-section.bg-blue {
   color: #FCFCFF;
 }
 .component.text-section.bg-blue h2 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 @keyframes reveal {
@@ -996,10 +992,10 @@ form .submit-container {
   top: 0;
   right: 0;
   background: #FCFCFF;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
   max-width: 240px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   border: 1px solid red;
@@ -1027,22 +1023,22 @@ form .submit-container {
   animation: reveal 400ms forwards;
 }
 .component.form-slider h3 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .component.form-slider p {
   font-weight: 300;
-  font-size: 24px;
-  margin-bottom: 32px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 992px) {
   .component.form-slider p {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 }
 .component.form-slider .custom-input,
 .component.form-slider textarea,
 .component.form-slider input {
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 @media screen and (min-width: 992px) {
   .component.form-slider .custom-input,
@@ -1062,24 +1058,24 @@ form .submit-container {
 .component.form-slider textarea {
   width: 100%;
   max-width: 660px;
-  padding: 12px 16px;
-  font-size: 20px;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
 }
 .component.form-slider textarea {
   min-height: 180px;
 }
 .component.form-slider input[type=number] {
   max-width: 88px;
-  font-size: 20px;
-  padding: 12px 8px 12px 16px;
+  font-size: 1.25rem;
+  padding: 0.75rem 0.5rem 0.75rem 1rem;
 }
 .component.form-slider .final input,
 .component.form-slider .final textarea {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   max-width: 100%;
 }
 .component.form-slider .final textarea {
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 .component.form-slider .form-slide-wrapper {
   display: flex;
@@ -1092,18 +1088,18 @@ form .submit-container {
 }
 
 .molecule.btn-container a:last-child {
-  margin-left: 4px;
+  margin-left: 0.25rem;
 }
 @media screen and (min-width: 576px) {
   .molecule.btn-container a:last-child {
-    margin-left: 12px;
+    margin-left: 0.75rem;
   }
 }
 
 .molecule.slider-item {
   background: #FCFCFF;
   display: inline-block;
-  margin-right: 28px;
+  margin-right: 1.75rem;
   height: 240px;
   width: 324px;
   box-shadow: 0px 2px 4px rgba(88, 89, 91, 0.16);
@@ -1131,15 +1127,15 @@ form .submit-container {
 .molecule.slider-item header {
   background: #257BEC;
   color: #FCFCFF;
-  padding: 16px 24px;
+  padding: 1rem 1.5rem;
 }
 .molecule.slider-item p {
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 .molecule.sidebar {
   position: absolute;
-  right: 76px;
+  right: 4.75rem;
   top: calc(54px + 50% - 280px);
 }
 .molecule.sidebar.sticky {
@@ -1151,12 +1147,12 @@ form .submit-container {
   padding: 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 .molecule.sidebar ol li a {
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -1164,22 +1160,22 @@ form .submit-container {
   text-decoration: none;
 }
 .molecule.sidebar ol li:not(:last-child) {
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 .molecule.sidebar.metallic li.active a {
-  font-size: 28px;
+  font-size: 1.75px;
   background: transparent;
   border: 1px solid #27292C;
 }
 .molecule.sidebar.blue li.active a {
-  font-size: 28px;
+  font-size: 1.75px;
   background: #FCFCFF;
   color: #257BEC;
 }
 
 .molecule.gallery-card {
   width: 100%;
-  padding: 48px;
+  padding: 3rem;
   min-height: 316px;
   display: flex;
   justify-content: center;
@@ -1191,9 +1187,9 @@ form .submit-container {
 
 .molecule.loading-bar {
   background: #CDCFD6;
-  height: 12px;
+  height: 0.75rem;
   position: sticky;
-  top: 108px;
+  top: 6.75rem;
   z-index: 2;
 }
 .molecule.loading-bar .bar {
@@ -1216,16 +1212,16 @@ form .submit-container {
   min-width: 80px;
   text-align: center;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: inline-block;
   border: 1px solid #777B84;
   background: #FCFCFF;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   font-weight: 400;
   cursor: pointer;
   transition: background 400ms;
-  margin-bottom: 20px;
-  margin-right: 16px;
+  margin-bottom: 1.25rem;
+  margin-right: 1rem;
 }
 .molecule.custom-input.select span.selected {
   background: #F39C2A;
@@ -1264,7 +1260,7 @@ body {
 
 .link-anchor {
   position: absolute;
-  margin-top: -108px;
+  margin-top: -6.75rem;
 }
 .link-anchor.deep {
   margin-top: -200px;
