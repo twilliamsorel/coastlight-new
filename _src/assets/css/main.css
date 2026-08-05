@@ -12,7 +12,7 @@ h6 {
 
 h2,
 .h2 {
-  font-size: 1.75px;
+  font-size: 1.75rem;
   line-height: 40px;
   font-weight: bold;
 }
@@ -46,7 +46,7 @@ h4 {
 }
 @media screen and (min-width: 576px) {
   h4 {
-    font-size: 1.75px;
+    font-size: 1.75rem;
   }
 }
 
@@ -1163,12 +1163,12 @@ form .submit-container {
   margin-bottom: 0.25rem;
 }
 .molecule.sidebar.metallic li.active a {
-  font-size: 1.75px;
+  font-size: 1.75rem;
   background: transparent;
   border: 1px solid #27292C;
 }
 .molecule.sidebar.blue li.active a {
-  font-size: 1.75px;
+  font-size: 1.75rem;
   background: #FCFCFF;
   color: #257BEC;
 }

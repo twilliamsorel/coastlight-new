@@ -14,6 +14,11 @@ module.exports = function (eleventyConfig) {
     strict_filters: true
   });
 
+  eleventyConfig.addLiquidShortcode("currentYear", () => {
+    const currentYear = new Date().getFullYear()
+    return currentYear.toString();
+  });
+
   // MINIFYING CSS AND JS
   eleventyConfig.on('eleventy.before', async () => {
     if (process.env.ENVIRONMENT === 'production') {

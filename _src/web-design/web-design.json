@@ -4,7 +4,7 @@
       "bg_color": "bg-metallic",
       "numeral": "I",
       "header": "Brand identity",
-      "description": "What is your story? What are you trying to convey? In this step, we’ll work with you to develop (or redevelop) your image. We’ll define your story and values, and will use that to inform the creative development of your brand.",
+      "description": "What is your story? What are you trying to convey? In this step, I’ll work with you to develop (or redevelop) your image. We’ll define your story and values, and will use that to inform the creative development of your brand.",
       "deliverables": [
         "Logo",
         "Color pallet",
@@ -37,7 +37,7 @@
       "bg_color": "bg-blue",
       "numeral": "IV",
       "header": "Web development",
-      "description": "With the high fidelity mockups in hand, we're ready to start coding. Depending on your project needs, this step may vary, but typically we’ll be building a static website in a modern SSG framework like Eleventy.",
+      "description": "With the high fidelity mockups in hand, I'm ready to start coding. Depending on your project needs, this step may vary, but typically I’ll be building a static website in a modern SSG framework like <a href='https://www.11ty.dev' target='_blank'>11ty</a>. I can also build a custom template in Wordpress, if desired.",
       "deliverables": [
         "Website code",
         "Digital assets"
@@ -47,7 +47,7 @@
       "bg_color": "bg-metallic",
       "numeral": "V",
       "header": "Deployment",
-      "description": "Now that your digital asset is ready, all that’s left to do is launch it. We’ll host your website or app on a cloud-based platform that scales with you as your traffic grows. Alternatively, we can also hand off the finished code to you or your organization.",
+      "description": "Now that your digital asset is ready, all that’s left to do is launch it. We’ll host your website or app on a cloud-based platform or VPS that scales with you as your traffic grows. Alternatively, we can also hand off the finished code to you or your organization.",
       "deliverables": [
         "Live website"
       ]
